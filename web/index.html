@@ -64,6 +64,9 @@
                     <li><a href="#title">Setup</a></li>
                     <ul>
                         <li><a href="#installation">Installation</a></li>
+                        <li><a href="#manual_installation">Manual Installation</a></li>
+                        <li><a href="#web_installation">Web Installation</a></li>
+                        <li><a href="#common_issues">Common Issues</a></li>
                         <li><a href="#db2"> Client Api Keys Configration </a></li>
                         <li><a href="#firebase_config"> Web Version Firebase Configration </a></li>
                         <li><a href="#update">Auto Update</a></li>
@@ -286,8 +289,12 @@
                         <p> Now click <span style="color:blue;">Install</span>. Thats it! You are ready to run your
                             first
                             ecommerce App : <b>https://eshop.com/</b></p>
+                            <h4>If you stuck in installation here is the video</h4>
+                            <video width="500" height="300"  controls>
+                                <source src="assets/videos/installation.webm" type="video/mp4">
+                            </video>
                 </section>
-                <h3 id="installation"> How install the eshop backend and / or web version code on
+                <h3 id="manual_installation"> How install the eshop backend and / or web version code on
                     your
                     server manually?</h3>
                 <section class="docs-intro" id="item-6-1">
@@ -303,6 +310,7 @@
                         </div>
                         <li>step 2 : Open application\config\database.php file from your server</li>
                         <li>Set your Database username , database password and database name there</li>
+                        <li>Import blank databse into your phpmyadmin(you will find blank databse in your code ex.eShop Multi Vendor - blank database - vx.x.x</li>
                         <div class="simplelightbox-gallery">
                             <a href="assets/img/database-setting.png">
                                 <!-- media -->
@@ -315,9 +323,37 @@
                         </li>
                     </ol>
                 </section>
+
+<h3 id="web_installation"> How install the eshop web if you already have installed admin panel</h3>
+                <section class="docs-intro" id="item-6-1">
+                    <p>
+                    <ol>
+                        <li>Find <b>web version - vx.x.x - installer - updater</b> file from downloded PHP source code.</li>
+                            <a href="assets/img/web-1.png">
+                                <!-- media -->
+                                <img src="assets/img/web-1.png" class="image-doc " alt="">
+                            </a>
+                            <a href="assets/img/web-2.png">
+                                <!-- media -->
+                                <img src="assets/img/web-2.png" class="image-doc " alt="">
+                            </a>
+                       
+                        <li>You can find file from above mentioed folder 
+                        </li>
+                        <li>Visit <code>http://eshop.com/admin/updater</code>
+                        </li>
+                        <li>Just drag and drop above mentioned file in to updater and click on
+                            <b>"Update The System"</b> button.
+                        </li>
+                        <li>Upload <b>update.zip</b> file.</li>
+                        <li>Click on that Update Button. </li>
+                        <li>That's all. You have successfully installed web version into your current system.</li>
+                    </ol>
+                </section>
+
                 <article class="docs-article" id="section-10">
                     <header class="docs-header">
-                        <h1 class="h1">Common issues (Server Specific)</h1>
+                        <h1 class="h1" id="common_issues">Common issues (Server Specific)</h1>
                         <section class="docs-intro" id="item-6-1">
                             <h2 class="h2">404 Code Found?</h2>
                             <p>
