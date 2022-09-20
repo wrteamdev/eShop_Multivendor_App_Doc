@@ -456,35 +456,43 @@
 							<div class="container"> <br>
 								<h2>How to change package name</h2>
 								<ol>
-									<li>In the Android pane, click on the little gear icon.Uncheck/Deselect the Compact
-										Empty Middle Packages option.</li>
+									<li>Press ctrl + shift + F and enter existing package name and change all result which show in search, else you have change it manually buy replace package name in  below files.</li>
+									
 									<br>
 									<img src="images/packagename_1.png" alt="eShop" />
 									<br><br>
 
-									<li>Your package directory will now be broken up in individual directories.</li><br>
+									<li>android\app\src\debug\AndroidManifest.xml</li><br>
 									<img src="images/packagename_2.png" alt="eShop" />
 									<br><br>
-									<li>Individually select each directory you want to rename, and: Right-click it
-										Select Refactor Click on Rename current In the Pop-up dialog.</li><br>
-									<img src="images/packagename_3.png" alt="eShop" />
+									<li>android\app\src\main\kotlin\eShop\multivendor\customer\eshop_multivendor\MainActivity.kt</li><br>
+									<img src="images/p3.png" alt="eShop" />
 									<br><br>
-
-									<li>Enter the new name and hit Refactor.Allow a minute to let Android Studio update
-										all changes.</li><br>
-									<img src="images/packagename_4.png" alt="eShop" /><br><br>
-
-
-									<li>Now press ctrl + shift + R and replace old packagename with your new packagename
-									</li><br>
-
-									<img src="images/packagename_5.png" alt="eShop" />
+									<li> When You are changing package name the you also need change name of folders according to your package name in (android\app\src\main\kotlin\) location in project. For Example if PAckage name is "eShop.multivendor.customer" Then inside kotlin folder folder stucture are eshop\multivendor\customer. now this folder structure will change as per your package name if your package name is "wrteam.eShop.customer" then new folder structure is wrteam\eShop\customer. for change name of this folders just open your project folder navigate inside the kotlin folder just rename the folders according to your package name . Note : (Sometime you got issue dou to this reason.)</li><br>
+									<img src="images/p4.png" alt="eShop" />
 									<br><br>
+									<img src="images/p5.png" alt="eShop" />
+									<br><br>
+									<li>Some Doubt regarding package name change  <br> 	
+										1. what if my package name is like this eShop.wrteam.multivendor.customer, so how can i make folder structure ?  <br> 	Ans. => in this situation you have to add one folder according to your package name , now you have 4 folder insode the kotline folder like this \eShop\wrteam\multivendor\customer\  </li><br>
+									<li>android\app\src\main\AndroidManifest.xml</li><br>
+									<img src="images/p6.png" alt="eShop" />
+									<br><br>
+									<li>android\app\src\profile\AndroidManifest.xml</li><br>
+									<img src="images/p7.png" alt="eShop" />
+									<br><br>
+									<li>android\app\build.gradle</li><br>
+									<img src="images/p8.png" alt="eShop" />
+									<br><br>
+								
+
 
 									<li>For ios open ios > Runner > info.plist > there is the key CFBundleIdentifier
 										change the string value for that as shown in below</li><br>
 									<img src="images/packagename_6.png" alt="eShop" />
 									<br><br>
+									<li>lib\Helper\Constant.dart </li><br>
+									
 									<img src="images/packagename_7.png" alt="eShop" />
 								</ol>
 								<div class="section_bdr"></div>
@@ -499,10 +507,9 @@
 								<h2>How to Change Images in app</h2>
 								<ol>
 
-									<li>Go to Assets > images folder. here you have to change all image to your app
-										image according to diffrent folder diffrent dimension images is used </li><br>
+									<li>Go to Assets > images folder. here you have 2 folders 1.png 2.svg. you can change your image to exist image with same name.</li><br>
 
-									<img src="images/img.png" alt="eShop" />
+									<img src="images/imageschange.png" alt="eShop" />
 									<br><br>
 
 
@@ -618,8 +625,8 @@
 								<h2>How to change default language of app</h2>
 								<ol>
 
-									<li>Go to lib > Helper > session.dart inside that go to getLocale() method. here you
-										have to change default language code "en" to your language code.
+									<li>Go to lib > Helper > constant.dart inside that defaultLanguage variable is availble. here you
+										have to change default language code "en" to your language code. 
 									</li><br>
 
 									<img src="images/applang.png" alt="eShop" />
@@ -641,7 +648,7 @@
 								<h2>How to Remove Dark Theme</h2>
 								<ol>
 
-									<li>Go to lib > MyProfile.dart inside that go to _getDrawerFirst() method. here you
+									<li>Go to lib > MyProfile.dart inside that go to _getDrawer() method. here you
 										have to comment change theme by doing double slash before change theme tile as
 										shown in below image
 									</li><br>
@@ -809,9 +816,9 @@
 									<li>Enable Phone Sign-in method and save.</li>
 									<br><img src="images/phone1.png"></a><br><br>
 									<li>Now, we have to add sha1 and sha256 key in firebase, for that perform below
-										given step for that you can do one of the below method</li>
+										given step </li>
 									<ol>
-										<li>From terminal</li>
+										
 										<ul>
 											<li>Go to the android folder. Right click gradlew file and select Open in
 												Terminal as shown in below image.</li>
@@ -823,22 +830,7 @@
 											<br><img src="images/terminal2.png"></a><br>
 
 										</ul>
-										<li>From gradle</li>
-										<ul>
-											<li>click on android > app > build.gradle. in upar right corner there is
-												option open
-												for editing in android studio. </li>
-
-
-											<br><img src="images/sha1.png"></a><br /><br />
-											<li>then dialog come here choose new window.in new window wait until gradle
-												build
-												finish after that in right side open gradle panel.in that go to android
-												> app >
-												signingReport.</li>
-										</ul>
-									</ol><br>
-									<img src="images/sha2.png"></a><br><br>
+								
 									<li>now take debug sha and sha256 will print copy that and add it in
 										firebase console.and also add sha-256 to firebase console.</li><br>
 									<br /><img src="images/sha3.png"></a><br><br>
@@ -897,7 +889,7 @@
 								<h2>How to Change default country code for OTP.</h2>
 
 								<ol><br>
-									<li>go to sentOtp.dart file inside that go to setCountryCode() method here you have
+									<li>go to lib > helper > Constant.dart  file inside that defaultCountryCode varible is available here you have
 										to change country code to your language code.
 									</li><br>
 									<img src="images/otp.png"><br><br>
