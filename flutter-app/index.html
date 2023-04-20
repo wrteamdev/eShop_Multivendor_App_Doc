@@ -28,7 +28,7 @@
 					<li><a href="#setupJDK" style="color:#ff0039">How to Setup Java jdk-11 on windows</a></li>
 					<li><a href="#setup" style="color:#ff0039">How to setup Flutter</a></li>
 
-					<li><a href="#flutter2" style="color:#ff0039">Upgrade to flutter 2.x</a></li>
+					<li><a href="#flutter2" style="color:#ff0039">Flutter doctor output error</a></li>
 					<li><a href="#open" style="color:#ff0039">How to first run project</a></li>
 					<li><a href="#appname" style="color:#ff0039">How to change App name</a></li>
 					<li><a href="#version" style="color:#ff0039">How to change App Version</a></li>
@@ -57,7 +57,10 @@
 					<li><a href='#firebase_otp' style="color:#ff0039">How to Enable Firebase Phone
 							Authentication(OTP).</a></li>
 					<li><a href='#otp' style="color:#ff0039">How to Change default country code for OTP.</a></li>
-
+					<li><a href='#googleSignIn' style="color:#ff0039">Authenticate with Firebase Using
+						Google Sign-In</a></li>
+					<li><a href='#appleSignIn' style="color:#ff0039">Authenticate with Firebase Using
+						Apple Login</a></li>
 					<li><a href='#fcm' style="color:#ff0039">How to set Notification</a></li>
 					<li><a href='#link' style="color:#ff0039">How to Create Dynamic Link Using Firebase for Share
 							product</a></li>
@@ -1074,6 +1077,48 @@
 										to change country code to your language code.
 									</li><br>
 									<img src="images/otp.png"><br><br>
+
+								</ol>
+							</div>
+						</section>
+
+						<section id="googleSignIn">
+							<div class="container">
+								<h2>Steps to Authenticate firebase using Google</h2>
+
+								<ol><br>
+									<li>Open your firebase console.
+									</li>
+									<li>Go to Sign-in method in Authentication.
+									</li>
+									<li>Go to the Google and enable the google sign_in automatically.
+									</li>
+									<br>
+									<img src="images/google_fcm.png"><br><br>
+
+								</ol>
+							</div>
+						</section>
+
+						<section id="appleSignIn">
+							<div class="container">
+								<h2>Steps to Authenticate firebase using Apple</h2>
+
+								<ol><br>
+									<li>Open your firebase console.</li>
+									<li>Go to Sign-in method in Authentication.</li>
+									<li>Go to the Apple and enable apple sign in.
+										<img src="images/apple1.png">
+									</li>
+									<li>In Xcode, select the Signing & Capabilities tab, and add "Sign
+										In With Apple" as a new Capability then select a team on the
+										Code Signing section.
+										<img src="images/apple2.png">
+									</li>
+									<li>This will generate and configure an App ID in the "Certificates,
+										Identifiers & Profiles" section of the Apple Developer portal.
+									</li>
+
 
 								</ol>
 							</div>
