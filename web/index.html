@@ -71,6 +71,7 @@
                         <li><a href="#shipping_methods">Shipping Methods</a></li>
                         <li><a href="#db2"> Client Api Keys Configration </a></li>
                         <li><a href="#firebase_config"> Web Version Firebase Configration </a></li>
+                        <li><a href="#socila_login"> Social Login Configration </a></li>
                         <li><a href="#update">Auto Update</a></li>
                     </ul>
 
@@ -96,8 +97,8 @@
                             <ul>
                                 <li><a href="#add_products">Add Products</a></li>
                                 <li><a href="#attributes">Attributes</a></li>
-                                <!--<li><a href="#attribut_sets">Attribute Sets</a></li>-->
-                                <!--<li><a href="#attribute_values">Attribute Values</a></li>-->
+                                <li><a href="#attribut_sets">Attribute Sets</a></li>
+                                <li><a href="#attribute_values">Attribute Values</a></li>
                                 <li><a href="#tax">Tax</a></li>
                                 <li><a href="#manage_products">Manage Products</a></li>
                                 <li><a href="#products_order">Products Order</a></li>
@@ -264,12 +265,12 @@
                             <li>First of all find the <b>eShop</b> folder from the PHP code folder from the downloaded
                                 package and upload the code to your server on your desired domain or subdomain. <b>Like
                                     for
-                                    example, You have https://eshop.com domain with you</b></li>
+                                    example, You have https://vendor.eshopweb.store domain with you</b></li>
                             <li>Create a new database from cPanel</li>
                             <li>Create new user for the database & give all the privileges to the user</li>
-                            <li>Afrer creation of user visit <code>https://eshop.com/install</code></li>
+                            <li>Afrer creation of user visit <code>https://vendor.eshopweb.store/install</code></li>
                             <div class="promo">
-                                <img class="bordered" src="assets/img/installer_page.png" alt="sample1">
+                                <img class="bordered" src="assets/img/installer-1.png" alt="sample1">
                                 <p>Sample image</p>
                             </div>
                             <ol>
@@ -291,7 +292,7 @@
                         </ol>
                         <p> Now click <span style="color:blue;">Install</span>. Thats it! You are ready to run your
                             first
-                            ecommerce App : <b>https://eshop.com/</b></p>
+                            ecommerce App : <b>https://vendor.eshopweb.store/</b></p>
                         <h4>If you stuck in installation here is the video</h4>
                         <video width="500" height="300" controls>
                             <source src="assets/videos/installation.webm" type="video/mp4">
@@ -417,7 +418,7 @@
 
                         <li>You can find file from above mentioed folder
                         </li>
-                        <li>Visit <code>http://eshop.com/admin/updater</code>
+                        <li>Visit <code>http://vendor.eshopweb.store/admin/updater</code>
                         </li>
                         <li>Just drag and drop above mentioned file in to updater and click on
                             <b>"Update The System"</b> button.
@@ -496,9 +497,9 @@
                             <p>
                             <ol>
                                 <div class="simplelightbox-gallery">
-                                    <a href="assets/img/installer_page.png">
+                                    <a href="assets/img/installer-1.png">
                                         <!-- media -->
-                                        <img src="assets/img/installer_page.png" class="image-doc" alt="">
+                                        <img src="assets/img/installer-1.png" class="image-doc" alt="">
                                     </a>
                                 </div>
                                 <li>Set all the fields do not set blank in any field.</li>
@@ -826,7 +827,8 @@
                             </ul>
                             </p>
                             <ol>
-                                <li style="color:red;" type="">Select Pickup Location for which you want to create parcel and click on Create
+                                <li style="color:red;" type="">Select Pickup Location for which you want to create
+                                    parcel and click on Create
                                     Shiprocket Order button.</li>
                                 <div class="simplelightbox-gallery">
                                     <a href="assets/img/create_order.png">
@@ -834,7 +836,8 @@
                                         <img src="assets/img/create_order.png" class="image-doc" alt="">
                                     </a>
                                 </div>
-                                <li style="color:red;" type="">After create order generate AWB code(its unique number use for identify order) like
+                                <li style="color:red;" type="">After create order generate AWB code(its unique number
+                                    use for identify order) like
                                     this.</li>
                                 <div class="simplelightbox-gallery">
                                     <a href="assets/img/generate_awb.png">
@@ -842,7 +845,8 @@
                                         <img src="assets/img/generate_awb.png" class="image-doc" alt="">
                                     </a>
                                 </div>
-                                <li style="color:red;" type="">After generate AWB Send pickup request for scheduled you shipping.</li>
+                                <li style="color:red;" type="">After generate AWB Send pickup request for scheduled you
+                                    shipping.</li>
                                 <div class="simplelightbox-gallery">
                                     <a href="assets/img/send_pickup_request.png">
                                         <!-- media -->
@@ -902,7 +906,7 @@
                         </li>
                     </ul>
                     <ol>
-                        <li style="color:red;" type="">Goto http://eshop.in/admin/client-api-keys/</li>
+                        <li style="color:red;" type="">Goto http://vendor.eshopweb.store/admin/client-api-keys/</li>
                         <li style="color:red;" type="">You can generate secret as per image below.</li>
                         <li style="color:red;" type="">Set the secret on the app side as JWT Secret Key. </li>
                         <div class="promo">
@@ -993,6 +997,87 @@
                     </ol>
                 </section>
                 <section>
+                    <h3 id="socila_login">Configure the firebase setup for social login web version</h3>
+                    <ul>
+                        <h3>
+                            <li style="color:red;" type="1"> Goto Admin panel System >> store settings and ON Socila login method you want.</li>
+                        </h3>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/admin_panel_social_login.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <h3>
+                            <li style="color:red;" type="1"> Goto Authentication and open " Sign-in method " Tab</li>
+                        </h3>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/firebase_sign_in_method.png" alt="sample Image">
+                            <p>Sample image</p>
+                        </div>
+                        <ol type="A">
+                            <li style="color:red;" type="">Enable Google and Facebook sign-in-method</li>
+                        </ol>
+                        <h3>
+                            <li style="color:red;" type="1"> Facebook Authentication </li>
+                        </h3>
+                        <ol type="A">
+                            <li style="color:red;" type="">For facebook authentication with firebase , go to >>
+                                <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers <<</a>
+                            </li>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_developer_login.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <li style="color:red;" type="">Now go to the My Apps option and create new app for your project</li>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_myapp.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app2.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app3.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app4.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <li style="color:red;" type="">Now go to Quickstart option and select www(web) option</a>
+                            </li>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app5.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app6.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <li style="color:red;" type="">Now go to Settings >> Basic and get your APP ID and APP SECRET , add this details in your firebase account facebook sign-in-method</a>
+                            </li>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app7.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app9.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                            <li style="color:red;" type="">Now go to Facebook Login >> settings and configure your details there</a>
+                            </li>
+                            <div class="promo">
+                                <img class="bordered" src="assets/img/facebook_create_app10.png" alt="sample Image">
+                                <p>Sample image</p>
+                            </div>
+                        </ol>
+                    </ul>
+                </section>
+                <section>
                     <!-- start auto update -->
                     <h1 id="update">Auto Update</h1>
                     <h3>How to auto update your admin panel or web version to latest version?</h3>
@@ -1001,7 +1086,7 @@
                     </div>
                     <ol>
                         <li>Find <b>update from vX.X to vX.X.X.zip</b> file from downloded PHP source code.</li>
-                        <li>Visit <code>http://eshop.com/admin/updater</code>
+                        <li>Visit <code>http://vendor.eshopweb.store/admin/updater</code>
                         </li>
                         <li>You will see simple instructions, current version to latest version information and
                             <b>"Update The System"</b> button.
@@ -1327,7 +1412,7 @@
                     <li style="color:green;" type="circle">The Products Tab contains an Sub tabs like Add Products,
                         Attributes, Attribute Sets, Attribute Values, Tax, Manage Products and Products Order</li>
                     <div class="promo">
-                        <img class="bordered" src="assets/img/product_tab2.png" alt="sample3">
+                        <img class="bordered" src="assets/img/products_tab.jpg" alt="sample3">
                     </div>
 
                     <h3 id="add_products">Add Product</h3>
@@ -1335,7 +1420,7 @@
                     <li style="color:green;" type="circle">Clicking to the New Product tab a new window will be
                         displayed as follows</li>
                     <div class="promo">
-                        <img class="bordered" src="assets/img/add_product2.png" alt="sample3">
+                        <img class="bordered" src="assets/img/add_product_tab.png" alt="sample3">
                     </div>
                     <ol>
                         <li style="color:red;" type="">In Product Name field Enter the Name of the Product.</li>
@@ -1357,7 +1442,7 @@
                     <br />
                     <h3 id="attributes">Attributes</h3>
                     <div class="promo">
-                        <img class="bordered" src="assets/img/attributes2.png" alt="sample3">
+                        <img class="bordered" src="assets/img/attribute_tab.jpg" alt="sample3">
                     </div>
                     <p style="color:red;">Here all the information related to Attributes is display</p>
                     Actions
@@ -1390,6 +1475,13 @@
                                 Attributes details
                             </li>
                         </ul>
+                        <li>Delete Attributes</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/delete1_tab.jpg" alt="sample3"> Used to Delete the
+                                Attributes details
+                            </li>
+                        </ul>
                         <li>Attributes Status</li>
                         <ul>
                             <li style="color:grey;">
@@ -1401,50 +1493,185 @@
                     <br>
                     <p style="color:red;">We Can add New Attributes and delete Attributes by following Steps :</p>
                     <h2>Step 1:Adding New Attributes in the Attributes List</h2>
-                    <p style="color:green;">Click on Manage Attribute button</p>
+                    <p style="color:green;">Click on Add New Attributes Tab Present On The Right Side</p>
                     <div class="promo">
-                        <img class="bordered" src="assets/img/manage_attributs2.png" alt="sample3">
+                        <img class="bordered" src="assets/img/new_att_tab.jpg" alt="sample3">
                     </div>
-                    <li style="color:green;" type="circle">After Clicking to the Manage Attribute button a new window will be
+                    <li style="color:green;" type="circle">After Clicking to the New Attributes tab a new window will be
                         displayed as follows</li>
                     <div class="promo">
-                        <img class="bordered" src="assets/img/add_attributs2.png" alt="sample3">
-                    </div>
-                    <div class="promo">
-                        <img class="bordered" src="assets/img/add_attribute3.png" alt="sample3">
+                        <img class="bordered" src="assets/img/new_att2_tab.jpg" alt="sample3">
                     </div>
                     <ol>
-                        <li style="color:red;" type="">After click add attribute set button a new window will be
-                        displayed as follows </li>
+                        <li style="color:red;" type="">Select Attributes Set field of the Attributes</li>
                         <div class="promo">
-                            <img class="bordered" src="assets/img/add_attribute_set2.png" alt="sample3">
+                            <img class="bordered" src="assets/img/set_attributes.jpg" alt="sample3">
                         </div>
-                        <li style="color:red;" type="">In Name field Enter the Name of the Attribute set.</li>
-                        <li style="color:red;" type="">Click add Attribute set to add Attribute set or Reset to Reset the
+                        <li style="color:red;" type="">In Name field Enter the Name of the Attributes.</li>
+                        <li style="color:red;" type="">Click add Attributes to add Attributes or Reset to Reset the
                             form.</li>
                     </ol>
+
+                    <h2>Step 3:Delete Attributes from the List</h2>
+                    <p> For Deleting Attributes we need to use<img src="assets/img/delete1_tab.jpg"> as explained above
+                        under Actions Attributes.</p>
+
+                    <br />
+                    <h3 id="attribut_sets">Attribute Sets</h3>
                     <div class="promo">
-                        <img class="bordered" src="assets/img/attribute_set_list2.png" alt="sample3">
+                        <img class="bordered" src="assets/img/attribut_sets_tab.jpg" alt="sample3">
+                    </div>
+                    <p style="color:red;">Here all the information related to Attribute Sets is display</p>
+                    Actions
+                    <ul>
+                        <li>Search Attribute Sets details</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/search_tab.jpg" alt="sample3"> To search the
+                                Attribute Sets Name or Any other Detail
+                            </li>
+                        </ul>
+                        <li>Refresh Attribute Sets list</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/refresh_tab.jpg" alt="sample3"> To Refresh
+                                Attribute Sets List
+                            </li>
+                        </ul>
+                        <li>Filters</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/filter_tab.jpg" alt="sample3"> Used to filter the
+                                Attribute Sets details according to the criteria
+                            </li>
+                        </ul>
+                        <li>Edit Attribute Sets</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/edit_tab.jpg" alt="sample3"> Used to Edit the
+                                Attribute Sets details
+                            </li>
+                        </ul>
+                        <li>Delete Attribute Sets</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/delete1_tab.jpg" alt="sample3"> Used to Delete the
+                                Attribute Sets details
+                            </li>
+                        </ul>
+                        <li>Attribute Sets Status</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/status_tab.jpg" alt="sample3"> Used to Active And
+                                Deactive the Attribute Sets Status
+                            </li>
+                        </ul>
+                    </ul>
+                    <br>
+                    <p style="color:red;">We Can add New Attribute Sets and delete Attribute Sets by following Steps :
+                    </p>
+                    <h2>Step 1:Adding New Attribute Sets in the Attribute Sets List</h2>
+                    <p style="color:green;">Click on Add Attribute Sets Tab Present On The Right Side</p>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/attribut_sets2_tab.jpg" alt="sample3">
+                    </div>
+                    <li style="color:green;" type="circle">Clicking to the Add Attribute Sets tab a new window will be
+                        displayed as follows</li>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/attribut_sets3_tab.jpg" alt="sample3">
                     </div>
                     <ol>
-                        <li style="color:red;" type="">After click attribute set list  button a new window will be
-                        displayed as follows </li>
-                        <div class="promo">
-                            <img class="bordered" src="assets/img/attribute_set_list_manage.png" alt="sample3">
-                        </div>
+                        <li style="color:red;" type="">In Attribute Sets Name field Enter the Name of the Attribute
+                            Sets.</li>
+                        <li style="color:red;" type="">Click add Attribute Sets to add Attribute Sets or Reset to Reset
+                            the form.</li>
                     </ol>
-                    <h2>Step 2 :Adding New atrributes</h2>
+                    <h2>Step 2:Delete Attribute Sets from the List</h2>
+                    <p> For Deleting Attribute Sets we need to use<img src="assets/img/delete1_tab.jpg"> as explained
+                        above under Actions Attribute Sets.</p>
+
+                    <br>
+
+                    <h3 id="attribute_values">Attribute Values</h3>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/attribute_values_tab.jpg" alt="sample3">
+                    </div>
+                    <p style="color:red;">Here all the information related to Attribute Values is display</p>
+                    Actions
+                    <ul>
+                        <li>Search Attribute Values details</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/search_tab.jpg" alt="sample3"> To search the
+                                Attribute Values Name or Any other Detail
+                            </li>
+                        </ul>
+                        <li>Refresh Attribute Values list</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/refresh_tab.jpg" alt="sample3"> To Refresh
+                                Attribute Values List
+                            </li>
+                        </ul>
+                        <li>Filters</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/filter_tab.jpg" alt="sample3"> Used to filter the
+                                Attribute Values details according to the criteria
+                            </li>
+                        </ul>
+                        <li>Edit Attribute Values</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/edit_tab.jpg" alt="sample3"> Used to Edit the
+                                Attribute Values details
+                            </li>
+                        </ul>
+                        <li>Delete Attribute Values</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/delete1_tab.jpg" alt="sample3"> Used to Delete the
+                                Attribute Values details
+                            </li>
+                        </ul>
+                        <li>Attribute Values Status</li>
+                        <ul>
+                            <li style="color:grey;">
+                                <img class="bordered" src="assets/img/status_tab.jpg" alt="sample3"> Used to Active And
+                                Deactive the Attribute Values Status
+                            </li>
+                        </ul>
+                    </ul>
+                    <br>
+                    <p style="color:red;">We Can add New Attribute Values and delete Attribute Values by following Steps
+                        :</p>
+                    <h2>Step 1:Adding New Attribute Values in the Attribute Values List</h2>
+                    <p style="color:green;">Click on Add Attribute Values Tab Present On The Right Side</p>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/attribute_values_tab2.jpg" alt="sample3">
+                    </div>
+                    <li style="color:green;" type="circle">Clicking to the Add Attribute Values tab a new window will be
+                        displayed as follows</li>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/attribute_values_tab3.jpg" alt="sample3">
+                    </div>
                     <ol>
+                        <li style="color:red;" type="">Select the Attribute Values</li>
                         <div class="promo">
-                            <img class="bordered" src="assets/img/add_attrubute_value2.png" alt="sample3">
+                            <img class="bordered" src="assets/img/select_attributes.jpg" alt="sample3">
                         </div>
-                        <li style="color:red;" type="">In Name field Enter the Name of the Attribute.</li>
-                        <li style="color:red;" type="">In Attribute value Enter the Attribute Value.</li>
-                        <li style="color:red;" type="">Click add Attribute to add Attribute or Reset to Reset the
-                            form.</li>
+                        <li style="color:red;" type="">Select the Parent</li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/select_parent.jpg" alt="sample3">
+                        </div>
+                        <li style="color:red;" type="">Click add Attribute Values to add Attribute Values or Reset to
+                            Reset the form.</li>
                     </ol>
-                    <br >
-                    
+                    <h2>Step 2:Delete Attribute Values from the List</h2>
+                    <p> For Deleting Attribute Values we need to use<img src="assets/img/delete1_tab.jpg"> as explained
+                        above under Actions Attribute Values.</p>
+
+                    <br>
 
                     <h3 id="tax">Products Tax</h3>
                     <div class="promo">
@@ -1560,9 +1787,13 @@
                     <h2>Step 1:Adding New Products in the Products List</h2>
                     <p style="color:green;">Click on Add Products Tab Present On The Right Side</p>
                     <div class="promo">
-                        <img class="bordered" src="assets/img/add_product2.png" alt="sample3">
+                        <img class="bordered" src="assets/img/manage_pro2_tab.jpg" alt="sample3">
                     </div>
-                   
+                    <li style="color:green;" type="circle">Clicking to the Add Products tab a new window will be
+                        displayed as follows</li>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/add_product_tab.png" alt="sample3">
+                    </div>
                     <ol>
                         <li style="color:red;" type="">In Product Name field Enter the Name of the Product.</li>
                         <li style="color:red;" type="">In Product Description field Enter the Description of the
@@ -2301,7 +2532,7 @@
                     <li style="color:green;" type="circle">The System Tab contains an Sub tab name as Payment Methods
                     </li>
                     <div class="promo">
-                        <img class="bordered" src="assets/img/payment_methods2.png" alt="sample3">
+                        <img class="bordered" src="assets/img/payment_methods.png" alt="sample3">
                     </div>
                     <ul>
                         <li type="circle" style="color:red;">From Here The Payment Methods can be Updated as per
@@ -2318,6 +2549,17 @@
                                 code</li>
                             <li><span style="color:blue;">Notification URL</span> : From Here we can update the
                                 Notification URL</li>
+                            <br>
+                            <h5>PayUMoney Payments</h5>
+                            <li><span style="color:blue;">PayUMoney Payments</span> : From Here we can update the
+                                PayUMoney Payments</li>
+                            <li><span style="color:blue;">Payment Mode</span> : From Here we can update the Payment Mode
+                            </li>
+                            <li><span style="color:blue;">Merchant key</span> : From Here we can update the Merchant key
+                            </li>
+                            <li><span style="color:blue;">Merchant ID</span> : From Here we can update the Merchant ID
+                            </li>
+                            <li><span style="color:blue;">Salt</span> : From Here we can update the Salt</li>
                             <br>
                             <h5>Razorpay Payments</h5>
                             <li><span style="color:blue;">Razorpay Payments</span> : From Here we can update the
@@ -2344,61 +2586,6 @@
                             </li>
                             <li><span style="color:blue;">Flutterwave Encryption key</span> : From Here we can update
                                 the Flutterwave Encryption key </li>
-                            <br>
-                            <h5>Stripe Payments</h5>
-                            <li><span style="color:blue;">Stripe Payments </span> : From Here we can update the Paypal
-                                Payments </li>
-                            <li><span style="color:blue;">Stripe Mode</span> : From Here we can update the Payment Mode
-                            </li>
-                            <li><span style="color:blue;">Payment Endpoint URL</span> : From Here we can update the Payment Endpoint URL</li>
-                            <li><span style="color:blue;">Stripe Publishable Key</span> : From Here we can update the Stripe Publishable Key</li>
-                            <li><span style="color:blue;">Stripe Secret Key</span> : From Here we can update the
-                                Stripe Secret Key</li>
-                            <li><span style="color:blue;">Stripe Webhook Secret Key</span> : From Here we can update the
-                                Stripe Webhook Secret Key</li>
-                            <li><span style="color:blue;">Currency Code</span> : From Here we can update the
-                                Currency Code</li>
-                            <br>
-                            <h5>Paytm Payments</h5>
-                            <li><span style="color:blue;">Paytm Payments </span> : From Here we can update the Paytm Payments</li>
-                            <li><span style="color:blue;">Paytm Mode</span> : From Here we can update the Paytm Mode
-                            </li>
-                            <li><span style="color:blue;">Paytm Merchant Key</span> : From Here we can update the Paytm Merchant Key</li>
-                            <li><span style="color:blue;">Paytm Merchant ID</span> : From Here we can update the Paytm Merchant ID</li>
-                            <li><span style="color:blue;">Paytm Website </span> : From Here we can update the
-                               Paytm Website </li>
-                            <li><span style="color:blue;">Industry Type ID</span> : From Here we can update the
-                                Industry Type ID</li>
-                            <br>
-                            <h5>Midtrans Payments</h5>
-                            <li><span style="color:blue;">Midtrans Payments </span> : From Here we can update the Midtrans Payments</li>
-                            <li><span style="color:blue;">Midtrans Mode</span> : From Here we can update the Midtrans Mode
-                            </li>
-                            <li><span style="color:blue;">Midtrans Client Key</span> : From Here we can update the Midtrans Client Key</li>
-                            <li><span style="color:blue;">Midtrans Merchant ID</span> : From Here we can update the Midtrans Merchant ID</li>
-                            <li><span style="color:blue;">Midtrans Server Key </span> : From Here we can update the
-                               Midtrans Server Key </li>
-                            <li><span style="color:blue;">Notification URL</span> : From Here we can update the
-                                Notification URL</li>
-                            <li><span style="color:blue;">Payment Return URL</span> : From Here we can update the
-                                Payment Return URL</li>
-                            <br>
-                            <h5>Myfatoorah Payments</h5>
-                            <li><span style="color:blue;">Myfatoorah Payments </span> : From Here we can update the Myfatoorah Payments</li>
-                            <li><span style="color:blue;">Myfatoorah Token</span> : From Here we can update the Myfatoorah Token
-                            </li>
-                            <li><span style="color:blue;">Myfatoorah Mode</span> : From Here we can update the Myfatoorah Mode</li>
-                            <li><span style="color:blue;">Myfatoorah Language</span> : From Here we can update the Myfatoorah Language</li>
-                            <li><span style="color:blue;">Payment Endpoint URL </span> : From Here we can update the
-                               Payment Endpoint URL</li>
-                            <li><span style="color:blue;">Myfatoorah Country</span> : From Here we can update the
-                                Myfatoorah Country</li>
-                            <li><span style="color:blue;">Payment success Url</span> : From Here we can update the
-                                Payment success Url</li>
-                            <li><span style="color:blue;">Payment error Url</span> : From Here we can update the
-                               Payment error Url</li>
-                            <li><span style="color:blue;">Myfatoorah Secret Key</span> : From Here we can update the
-                               Myfatoorah Secret Key</li>
                             <br>
                             <h5>Cash On Delivery</h5>
                             <li><span style="color:blue;">COD</span> : From Here we can update the COD </li>
