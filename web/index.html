@@ -35,8 +35,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/titleicon.svg" alt="logo"
-                            align="center" style="max-height: 120px; max-width: 200px;"></a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/eshop-logo.png" alt="logo"
+                            align="center" style="max-height: 120px;"></a>
                 </div>
                 <!-- END Toggle buttons and brand -->
                 <!-- Top navbar -->
@@ -47,7 +47,7 @@
         <!-- Banner -->
         <div class="banner auto-size" style="background-color: #c74e4636">
             <div class="container text-black">
-                <h1><strong>eShop Multivendor Admin Panel
+                <h1><strong>eShop Admin Panel
                     </strong> Documentation
                 </h1>
                 <h5>Easy To Configure,Setup And Use Our System</h5>
@@ -61,20 +61,13 @@
             <aside class="col-sm-3 sidebar sidebar-line">
                 <ul class="nav sidenav dropable sticky">
                     <li><a href="#overview">Overview</a></li>
-                    <li><a href="#system_flow">System Flow</a></li>
                     <li><a href="#title">Setup</a></li>
                     <ul>
                         <li><a href="#installation">Installation</a></li>
-                        <li><a href="#manual_installation">Manual Installation</a></li>
-                        <li><a href="#web_installation">Web Installation</a></li>
-                        <li><a href="#common_issues">Common Issues</a></li>
-                        <li><a href="#shipping_methods">Shipping Methods</a></li>
                         <li><a href="#db2"> Client Api Keys Configration </a></li>
                         <li><a href="#firebase_config"> Web Version Firebase Configration </a></li>
-                        <li><a href="#socila_login"> Social Login Configration </a></li>
                         <li><a href="#update">Auto Update</a></li>
                     </ul>
-
                     <li><a href="#support">Support</a></li>
                     <li>
                         <a href="#tabs">Tabs</a>
@@ -104,8 +97,8 @@
                                 <li><a href="#products_order">Products Order</a></li>
                             </ul>
                             <li><a href="#media_gallery">Media Management</a></li>
-                            <li><a href="#home_slider">Home Slider img</a></li>
-                            <li><a href="#new_offers">New Offers img</a></li>
+                            <li><a href="#home_slider">Home Slider Images</a></li>
+                            <li><a href="#new_offers">New Offers Images</a></li>
                             <li><a href="#promo_code">Promo code</a></li>
                             <a href="#featured_sections">Featured Sections</a>
                             <ul>
@@ -165,739 +158,39 @@
             <!-- Main content -->
             <article class="col-sm-9 main-content" role="main">
                 <section>
+                    <h3 id="installation"> Step 1. How install the eshop backend and / or web version code on your
+                        server by using installation wizard?</h3>
                     <ol>
-                        <p>
+                        <li>First of all find the <b>eShop</b> folder from the PHP code folder from the downloaded
+                            package and upload the code to your server on your desired domain or subdomain. <b>Like for
+                                example, You have https://eshop.com domain with you</b></li>
+                        <li>Create a new database from cPanel</li>
+                        <li>Create new user for the database & give all the privileges to the user</li>
+                        <li>Afrer creation of user visit <code>https://eshop.com/install</code></li>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/installer-1.png" alt="sample1">
+                            <p>Sample image</p>
+                        </div>
                         <ol>
-                            <li>
-                                Login into your cPanel.
-                            </li>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/cp-1.png">
-
-                                    <img src="assets/img/cp-1.png" class="image-doc">
-                                </a>
-                            </div>
-                            <li>
-                                Go to database in your cPanel
-                            </li>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/cp-2.png">
-
-                                    <img src="assets/img/cp-2.png" class="image-doc">
-                                </a>
-                            </div>
-                            <li>
-                                Enter database name and Create a new database.
-                            </li>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/cp-3.png">
-
-                                    <img src="assets/img/cp-3.png" class="image-doc">
-                                </a>
-                            </div>
-                            <li>
-                                Create Database user.
-                            </li>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/cp-4.png">
-
-                                    <img src="assets/img/cp-4.png" class="image-doc">
-                                </a>
-                            </div>
-                            <li>
-                                Assign Database to the user.
-                            </li>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/cp-5.png">
-
-                                    <img src="assets/img/cp-5.png" class="image-doc">
-                                </a>
-                            </div>
-                            <li>
-                                Open File manager now.
-                            </li>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/cp-6.png">
-
-                                    <img src="assets/img/cp-6.png" class="image-doc">
-                                </a>
-                            </div>
-                            <li>
-                                Go to public_html or public_html/yourDomain.in folder in the file manager,
-                                whichever folder your domain points to.
-                            </li>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/cp-7.png">
-
-                                    <img src="assets/img/cp-7.png" class="image-doc">
-                                </a>
-                            </div>
-                            <li>
-                                Upload the downloaded zip in public_html or public_html/yourDomain.in folder.
-                            </li>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/cp-8.png">
-                                    <img src="assets/img/cp-8.png" class="image-doc">
-                                </a>
-                            </div>
-                            <li>
-                                unzip or extract the <b>Code vX.X - upload this on server.zip</b> file that you
-                                have just uploaded.
-                            </li>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/cp-9.png">
-                                    <img src="assets/img/cp-9.png" class="image-doc">
-                                </a>
-                            </div>
-                            <li>
-                                verify that all these files are in public_html or public_html/yourDomain.in
-                                folder.
-                            </li>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/cp-10.png">
-                                    <img src="assets/img/cp-10.png" class="image-doc">
-                                </a>
-                            </div>
-                            </p>
-                            <h3 id="installation"> How install the eshop backend and / or web version code on
-                                your
-                                server by using installation wizard?</h3>
-                            <li>First of all find the <b>eShop</b> folder from the PHP code folder from the downloaded
-                                package and upload the code to your server on your desired domain or subdomain. <b>Like
-                                    for
-                                    example, You have https://vendor.eshopweb.store domain with you</b></li>
-                            <li>Create a new database from cPanel</li>
-                            <li>Create new user for the database & give all the privileges to the user</li>
-                            <li>Afrer creation of user visit <code>https://vendor.eshopweb.store/install</code></li>
-                            <div class="promo">
-                                <img class="bordered" src="assets/img/installer-1.png" alt="sample1">
-                                <p>Sample image</p>
-                            </div>
-                            <ol>
-                                <li><span style="color:blue;">Database Hostname</span> : Enter the hostname.</li>
-                                <li><span style="color:blue;">Database Username</span> : Enter the username that have
-                                    access
-                                    to the database.</li>
-                                <li><span style="color:blue;">Database Password</span> : Enter the password.</li>
-                                <li><span style="color:blue;">Database Name</span> : Enter the name of database.</li>
-                                <li><span style="color:blue;">Admin Mobile</span> : Enter the mobile number <b>(The
-                                        mobile
-                                        number will be used further for user authentication)</b></li>
-                                <li><span style="color:blue;">Admin Password</span> : Enter the password number<b>(The
-                                        password will be used further for user authentication)</b></li>
-                                <li><span style="color:blue;">App Url</span> : Enter the your app / domain url. Make
-                                    sure
-                                    you enter the complete URL with the correct protocol say http:// or https:// </li>
-                            </ol>
+                            <li><span style="color:blue;">Database Hostname</span> : Enter the hostname.</li>
+                            <li><span style="color:blue;">Database Username</span> : Enter the username that have access
+                                to the database.</li>
+                            <li><span style="color:blue;">Database Password</span> : Enter the password.</li>
+                            <li><span style="color:blue;">Database Name</span> : Enter the name of database.</li>
+                            <li><span style="color:blue;">Admin Mobile</span> : Enter the mobile number <b>(The mobile
+                                    number will be used further for user authentication)</b></li>
+                            <li><span style="color:blue;">Admin Password</span> : Enter the password number<b>(The
+                                    password will be used further for user authentication)</b></li>
+                            <li><span style="color:blue;">App Url</span> : Enter the your app / domain url. Make sure
+                                you enter the complete URL with the correct protocol say http:// or https:// </li>
                         </ol>
-                        <p> Now click <span style="color:blue;">Install</span>. Thats it! You are ready to run your
-                            first
-                            ecommerce App : <b>https://vendor.eshopweb.store/</b></p>
-                        <h4>If you stuck in installation here is the video</h4>
-                        <video width="500" height="300" controls>
-                            <source src="assets/videos/installation.webm" type="video/mp4">
-                        </video>
+                    </ol>
+                    <p> Now click <span style="color:blue;">Install</span>. Thats it! You are ready to run your first
+                        ecommerce App : <b>https://eshop.com/</b></p>
                 </section>
+
                 <section>
-                    <h2 id="system_flow">System Flow</h2>
-                    <ol>
-                        <h2 class="section-heading">Order Flow</h2>
-                        <li>Customer can order form one any seller at a time. if is single seller system is on then
-                            customer can order from one seller at a time</li>
-                        <li>After placing the order, seller and admin will get notify by email.</li>
-                        <li>After receiving of order, system will notify the customer by push
-                            notification about order.</li>
-                        <li>After receiving of order, admin or seller can assign delivery boy. delivery boy will get
-                            notify by push notification that new order is assigned to you.</li>
-                        <li>Delivery boy will get the commission after deliver the order. </li>
-                        <p class="text text-primary"> Note: Admin have to set the commission method for the
-                            delivery boy . we have two types of commission methods for delivery boy you can check on
-                            delivery boy menu at admin panel.</p>
-                        <li>Also admin need to set up the cron job for seller payment.</li>
-                        <li>If admin did not want to set crone job then admin can give commission to seller
-                            manually.</li>
-                        <p class="text text-primary"> Note: System have button named "Settle seller
-                            comission" on seller page at
-                            admin panel. just Click on that all the pending payments of sellers will settle
-                            down.</p>
-                        <li>If order item is cancellable or returnable then customer can return or cancel the item.</li>
-                    </ol>
-                </section>
-                <section class="docs-intro" id="item-11-2">
-                    <h2 class="section-heading">Order assignent to delivery boy in multiple ways</h2>
-                    <p>
-                    </p>
-                    <ol>
-                        <li>Admin can assign order to delivery boy.</li>
-                        <li>If admin give permission to seller then seller will also can assign the delivery boy
-                            to the order.</li>
-                        <p class="text text-primary"> Note: In seller menu admin can edit the permissions
-                            according to his choise.</p>
-                    </ol>
-                    <p></p>
-                </section>
-                <section class="docs-intro" id="item-11-3">
-                    <h2 class="section-heading">Revenue Model</h2>
-                    <p>
-                    </p>
-                    <p> In this section we are going to understand how system calculate the admin
-                        commission,
-                        seller earning and delivery boy earning.</p>
 
-                    <ol>
-                        <li> <strong> Admin Revenue:</strong> Commission that he will take from seller per
-                            order.</li>
-                        <li> <strong> Seller Revenue:</strong> After taking his commission by admin,
-                            remaining payment will transferred into the wallet of seller. then seller need
-                            to withdraw.</li>
-                        <li><strong>Delivery boy Commission System</strong></li>
-                        <ol>
-                            <li>Percentage on Delivery Charges</li>
-                            <ul>
-                                <li>delivery boy will get commission on delivery charge of orders when he/she will
-                                    delvier the order.</li>
-                                <li>Payment will transfer in wallet of delivery boy</li>
-                            </ul>
-                            <li>Fixed Commission per Order</li>
-                            <ul>
-                                <li>delivery boy will get fix amount of commission per order when he/she delvier
-                                    the
-                                    order. </li>
-                                <li>Payment will transfer in wallet of delivery boy</li>
-                            </ul>
-                        </ol>
-
-                    </ol>
-                    <p></p>
-                </section>
-                <h3 id="manual_installation"> How install the eshop backend and / or web version code on
-                    your
-                    server manually?</h3>
-                <section class="docs-intro" id="item-6-1">
-                    <p>
-                    <ol>
-                        <li>Open application\config\config.php file from your server</li>
-                        <li>Set Your Domain url in base_url ex.$config['base_url'] = 'http://your_domain_url/';</li>
-                        <div class="simplelightbox-gallery">
-                            <a href="assets/img/config.png">
-                                <!-- media -->
-                                <img src="assets/img/config.png" class="image-doc" alt="">
-                            </a>
-                        </div>
-                        <li>step 2 : Open application\config\database.php file from your server</li>
-                        <li>Set your Database username , database password and database name there</li>
-                        <li>Import blank databse into your phpmyadmin(you will find blank databse in your code ex.eShop
-                            Multi Vendor - blank database - vx.x.x</li>
-                        <div class="simplelightbox-gallery">
-                            <a href="assets/img/database-setting.png">
-                                <!-- media -->
-                                <img src="assets/img/database-setting.png" class="image-doc" alt="">
-                            </a>
-                        </div>
-                        <li>step 3 : Open code in your server and delete install folder.</li>
-                        <li>Now your system is ready to use.</li>
-                        <li>You can login using our default mobile : <b>9876543210</b> and password : <b>12345678</b>
-                        </li>
-                    </ol>
-                </section>
-
-                <h3 id="web_installation"> How install the eshop web if you already have installed admin panel</h3>
-                <section class="docs-intro" id="item-6-1">
-                    <p>
-                    <ol>
-                        <li>Find <b>web version - vx.x.x - installer - updater</b> file from downloded PHP source code.
-                        </li>
-                        <a href="assets/img/web-1.png">
-                            <!-- media -->
-                            <img src="assets/img/web-1.png" class="image-doc " alt="">
-                        </a>
-                        <a href="assets/img/web-2.png">
-                            <!-- media -->
-                            <img src="assets/img/web-2.png" class="image-doc " alt="">
-                        </a>
-
-                        <li>You can find file from above mentioed folder
-                        </li>
-                        <li>Visit <code>http://vendor.eshopweb.store/admin/updater</code>
-                        </li>
-                        <li>Just drag and drop above mentioned file in to updater and click on
-                            <b>"Update The System"</b> button.
-                        </li>
-                        <li>Upload <b>update.zip</b> file.</li>
-                        <li>Click on that Update Button. </li>
-                        <li>That's all. You have successfully installed web version into your current system.</li>
-                    </ol>
-                </section>
-
-                <article class="docs-article" id="section-10">
-                    <header class="docs-header">
-                        <h1 class="h1" id="common_issues">Common issues (Server Specific)</h1>
-                        <section class="docs-intro" id="item-6-1">
-                            <h2 class="h2">404 Code Found?</h2>
-                            <p>
-                            <ol>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/404-error.png">
-                                        <!-- media -->
-                                        <img src="assets/img/404-error.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <li>Your <strong> .htaccess </strong> file is missing at your server. </li>
-                                <li>To resolve that open zip file which you have downloaded from codecanyon.</li>
-                                <li>Unzip this file Code <strong> vX.X - upload this to server </strong> </li>
-                                <li>Open that folder and you will get <strong>.htaccess</strong> file</li>
-                                <li>Upload that file on main folder.</li>
-                            </ol>
-                            </p>
-                        </section>
-                        <section class="docs-intro" id="item-6-2">
-                            <h2 class="h2">Not Settling Payments to sellers while deliver the order?</h2>
-                            <p>
-                            <ol>
-                                <li>Check that you have set the <strong> Cron job </strong> on your server.</li>
-                                <li>Note: if you are not aware of cron job then you can ask your server for
-                                    help or documentation.</li>
-                                <li>For more details of commission method you will find guidance on bottom
-                                    of System -> System Settings page. </li>
-                                <li>This cron job is automatic system for payment Settling. If you want to do it
-                                    manually then we have that option too.</li>
-                                <li>Go to sellers -> sellerss Manu</li>
-                                <li>Click on <strong>Update Seller Comission</strong> Button for settlement of
-                                    sellers payments.See below image :</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/manual-settle.png">
-                                        <img src="assets/img/manual-settle.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                            </ol>
-                            </p>
-                        </section>
-                        <section class="docs-intro" id="item-6-2">
-                            <h2 class="h2">Assign categories to seller</h2>
-                            <video width="500" height="300" controls="">
-                                <source src="assets/videos/assign_category.webm" type="video/mp4">
-                            </video>
-                        </section>
-                        <section class="docs-intro" id="item-6-3">
-                            <h2 class="h2">Added product but not showing?</h2>
-                            <p>
-                            <ol>
-                                <li>Check that if seller has added then admin need to activate that product.</li>
-                                <li>Check your <strong> only_full_group_by_mode </strong> at your server. it has to
-                                    be disable.</li>
-                                <li>If you are having this <strong>only_full_group_by_mode</strong> issue then this
-                                    is your server side issue. please ask your server support to disable this
-                                    only_full_group_by_mode at PHPMyAdmin(mySQL).</li>
-                                <li>Check product is active or de-active. It ahs to be active for display.</li>
-                            </ol>
-                            </p>
-                        </section>
-                        <section class="docs-intro" id="item-6-4">
-                            <h2 class="h2">Not installing?</h2>
-                            <p>
-                            <ol>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/installer-1.png">
-                                        <!-- media -->
-                                        <img src="assets/img/installer-1.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <li>Set all the fields do not set blank in any field.</li>
-                                <li>Use this same mobile, password and email for the installation. You can change
-                                    password from profile section.</li>
-                                <li>And if you want to change mobile then you need to run the query on your
-                                    MySQL(PhpMyAdmin).</li>
-                                <li>Steps to run this query:</li>
-                                <ol>
-                                    <li>Open PhpMyAdmin on your server. select your databse and table.</li>
-                                    <div class="simplelightbox-gallery">
-                                        <a href="assets/img/users-list.png">
-                                            <!-- media -->
-                                            <img src="assets/img/users-list.png" class="image-doc" alt="">
-                                        </a>
-                                    </div>
-                                    <li>Open Users table.</li>
-                                    <li>Click on SQL tab</li>
-                                    <div class="simplelightbox-gallery">
-                                        <a href="assets/img/sql-tab.png">
-                                            <!-- media -->
-                                            <img src="assets/img/sql-tab.png" class="image-doc" alt="">
-                                        </a>
-                                    </div>
-                                    <li>Copy this following query and paste in that sql tab page
-                                        <code>UPDATE `users` SET `mobile` = 'YOUR_MOBILE_NUMBER' WHERE `users`.`id`
-                                                = 1;</code>
-                                    </li>
-                                    <li>And Click on <strong> GO </strong> Button to run that query. See the image
-                                        below:</li>
-                                    <div class="simplelightbox-gallery">
-                                        <a href="assets/img/run-query.png">
-                                            <!-- media -->
-                                            <img src="assets/img/run-query.png" class="image-doc" alt="">
-                                        </a>
-                                    </div>
-                                </ol>
-                            </ol>
-                            </p>
-                        </section>
-                        <section class="docs-intro" id="item-6-5">
-                            <h2 class="h2">SMTP Email notification not working?</h2>
-                            <p>
-                            <ol>
-                                <li>You have to setup the email settings on panel.You can see below image.</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/email-settings.png">
-                                        <!-- media -->
-                                        <img src="assets/img/email-settings.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <li>You can test your SMTP configuration here <a href="https://www.gmass.co/smtp-test"
-                                        target="_BLANK"><i class="fa fa-link"></i></a></li>
-                            </ol>
-                            </p>
-                        </section>
-                        <section class="docs-intro" id="item-6-6">
-                            <h2 class="h2">Push notification not working?</h2>
-                            <p>
-                            <ol>
-                                <li>Setup FCM Server Key</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/notification-settings.png">
-                                        <!-- media -->
-                                        <img src="assets/img/notification-settings.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <li>If still its not working then logout the app, then login the app and check the
-                                    notification.</li>
-                            </ol>
-                            </p>
-                        </section>
-                        <section class="docs-intro" id="item-6-7">
-                            <h2 class="h2">Invalid Hash Error?</h2>
-                            <p>
-                            <ol>
-                                <li>Check that you have created the Client Api Keys for your application. Here,</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/clients-api-keys.png">
-                                        <!-- media -->
-                                        <img src="assets/img/clients-api-keys.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <li>Set that secret key at application side.</li>
-                                <li>It should be same on both side application and Admin panel side.</li>
-                            </ol>
-                            </p>
-                        </section>
-                    </header>
-                </article>
-                <article class="docs-article" id="section-11">
-                    <header class="docs-header">
-                        <h1 class="h1" id="shipping_methods">Shipping Methods</h1>
-                        <ul>
-                            <li style="color:red;" type="">
-                                In Shipping you can select shippings method for deliver orders to customers.
-                            </li>
-                            <li style="color:red;" type="">
-                                currently 2 shipping methods are available in Eshop. if you want you can use both
-                                shipping method at a time.
-                            </li>
-                        </ul>
-                        <h6><b>Type :</b></h6>
-                        <ol>
-                            <li>
-                                Local Shipping
-                            </li>
-                            <li>
-                                Standard Shipping
-                                <ol>
-                                    <li>
-                                        Shiprocket
-                                    </li>
-                                </ol>
-                            </li>
-                            </ul>
-                        </ol>
-                        <h6><b>How to change shipping Methods:</b></h6>
-                        <p>
-
-                        <div class="simplelightbox-gallery">
-                            <a href="assets/img/shipping_method.png">
-                                <!-- media -->
-                                <img src="assets/img/shipping_method.png" class="image-doc" alt="">
-                            </a>
-                        </div>
-
-                        </p>
-                        <section class="docs-intro" id="item-6-7">
-                            <h2 class="h2">Local Shipping Method</h2>
-                            <p>
-                            <ul>
-                                <li>In this method you can assign your delivery boy for deliver customer orders.</li>
-                            </ul>
-                            </p>
-                        </section>
-                        <section class="docs-intro" id="item-6-7">
-                            <h2 class="h2">Standard Shipping</h2>
-                            <p>
-                            <ul>
-                                <li>in this method you can use other currier services like shiprocket for deliver orders
-                                    to customers.</li>
-                            </ul>
-                            <ol>
-                                <h5>
-                                    <li>Shipprocket</li>
-                                </h5>
-                            </ol>
-                            <ul>
-                                Shiprocket, a product of Delhi based BigFoot Retail solution, is India's first automated
-                                shipping software that aims reduce ecommerce shipping to its bare bones. ... You can
-                                print bulk shipping labels and ship your products to in and around the world using a
-                                single platform.
-                            </ul>
-                            </p>
-                        </section>
-                        <section class="docs-intro" id="item-6-7">
-                            <h2 class="h2">Account</h2>
-                            <p>
-                            <ul>
-                                <li>First Create shiprockdet account<a href="https://app.shiprocket.in/register"
-                                        target="_blank"> Click here.</a></li>
-                            </ul>
-                            </p>
-                            <p></p>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/shiprocket_account.png">
-                                    <!-- media -->
-                                    <img src="assets/img/shiprocket_account.png" class="image-doc" alt="">
-                                </a>
-                            </div>
-                            </p>
-                        </section>
-                        <section class="docs-intro" id="item-6-7">
-                            <h2 class="h2">Recharge Wallet</h2>
-                            <p>
-                            <ul>
-                                <li>after successfully login you have to recharge you shiprocket wallet without wallet
-                                    balance you can not use their services</li>
-                            </ul>
-                            </p>
-                            <p></p>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/shiprocket_wallet.png">
-                                    <!-- media -->
-                                    <img src="assets/img/shiprocket_wallet.png" class="image-doc" alt="">
-                                </a>
-                            </div>
-                            </p>
-                        </section>
-                        <section class="docs-intro" id="item-6-7">
-                            <h2 class="h2">API Config</h2>
-                            <p>
-                            <ul>
-                                <li>So now to use shiprocket in your system first go to api Config from <a
-                                        href="https://app.shiprocket.in/api-user" target="bla
-                                    ">here</a></li>
-                            </ul>
-                            </p>
-                            <p>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/shiprocketApi_config.png">
-                                    <!-- media -->
-                                    <img src="assets/img/shiprocketApi_config.png" class="image-doc" alt="">
-                                </a>
-                            </div>
-                            </p>
-                            <p>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/create_shiprocketApi.png">
-                                    <!-- media -->
-                                    <img src="assets/img/create_shiprocketApi.png" class="image-doc" alt="">
-                                </a>
-                            </div>
-                            </p>
-                            <p>
-                            <ul>
-                                <li>here you have to create user for use shiprockdet in your system.</li>
-                            </ul>
-                            </p>
-                            <p>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/create_shiprocketApi2.png">
-                                    <!-- media -->
-                                    <img src="assets/img/create_shiprocketApi2.png" class="image-doc" alt="">
-                                </a>
-                            </div>
-                            </p>
-                            <p>
-                            <ul>
-                                <li>
-                                    <h5>After create user you have to add user credentials in you admin panel here.</h5>
-                                </li>
-                            </ul>
-                            </p>
-                            <p>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/shipping_methods.png">
-                                    <!-- media -->
-                                    <img src="assets/img/shipping_methods.png" class="image-doc" alt="">
-                                </a>
-                            </div>
-                            </p>
-                        </section>
-                        <section class="docs-intro" id="item-6-7">
-                            <h2 class="h2">How it will work?</h2>
-                            <p><br>
-                            <h4>1. Add Pickup Location.</h4>
-                            <ul>
-                                <li>shiprocket uses pickup location for pickup orders from owner</li>
-                                <li>in your system only seller can add pickup location, from here seller can add
-                                    pickup
-                                    location.</li>
-                            </ul>
-                            </p>
-                            <p>
-                            <div class="simplelightbox-gallery">
-                                <a href="assets/img/seller_pickup_location.png">
-                                    <!-- media -->
-                                    <img src="assets/img/seller_pickup_location.png" class="image-doc" alt="">
-                                </a>
-                            </div>
-                            </p><br>
-                            <p>
-                            <h5>after adding pickup location admin have to verified pickup location from admin panel
-                                and
-                                also from shiprocket dashboard</h5>
-                            </p>
-                            <ol>
-                                <p>
-                                    <li>verify pickup location from admin panel</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/admin_pickup_location.png">
-                                        <!-- media -->
-                                        <img src="assets/img/admin_pickup_location.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <li>verify pickup location from shiprocket dashboard</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/shiprocket_pickup_location.png">
-                                        <!-- media -->
-                                        <img src="assets/img/shiprocket_pickup_location.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/shiprocket_verify_pickup_location.png">
-                                        <!-- media -->
-                                        <img src="assets/img/shiprocket_verify_pickup_location.png" class="image-doc"
-                                            alt="">
-                                    </a>
-                                </div>
-                                </p>
-                            </ol>
-                            <br>
-                            <h4>2. Add product or Edit product.</h4>
-                            <p>
-                            <ul>
-                                <li>after successfully verify pickup location you can add/edit product like this</li>
-                                <ol>
-                                    <li style="color:red;" type="">For simple product </li>
-                                    <div class="simplelightbox-gallery">
-                                        <a href="assets/img/add_simple_product.png">
-                                            <!-- media -->
-                                            <img src="assets/img/add_simple_product.png" class="image-doc" alt="">
-                                        </a>
-                                    </div>
-                                    <li style="color:red;" type="">For variable product </li>
-                                    <div class="simplelightbox-gallery">
-                                        <a href="assets/img/add_variable_product.png">
-                                            <!-- media -->
-                                            <img src="assets/img/add_variable_product.png" class="image-doc" alt="">
-                                        </a>
-                                    </div>
-                                </ol>
-                            </ul>
-                            </p>
-                        </section>
-                        <section class="docs-intro" id="item-6-7">
-                            <h2 class="h2">How to create shiprocket order?</h2>
-                            <p>
-                            <ul>
-                                <li>after getting orders and want deliver order using shiprocket you have to create
-                                    shiprocket order
-                                    Go to edit order in you panel </li>
-                            </ul>
-                            </p>
-                            <ol>
-                                <li style="color:red;" type="">Select Pickup Location for which you want to create
-                                    parcel and click on Create
-                                    Shiprocket Order button.</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/create_order.png">
-                                        <!-- media -->
-                                        <img src="assets/img/create_order.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <li style="color:red;" type="">After create order generate AWB code(its unique number
-                                    use for identify order) like
-                                    this.</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/generate_awb.png">
-                                        <!-- media -->
-                                        <img src="assets/img/generate_awb.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <li style="color:red;" type="">After generate AWB Send pickup request for scheduled you
-                                    shipping.</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/send_pickup_request.png">
-                                        <!-- media -->
-                                        <img src="assets/img/send_pickup_request.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <li style="color:red;" type="">Generate and download Label.</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/generate_label.png">
-                                        <!-- media -->
-                                        <img src="assets/img/generate_label.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/download_label.png">
-                                        <!-- media -->
-                                        <img src="assets/img/download_label.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <li style="color:red;" type="">Generate and download Invoice.</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/generate_invoice.png">
-                                        <!-- media -->
-                                        <img src="assets/img/generate_invoice.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/download_invoice.png">
-                                        <!-- media -->
-                                        <img src="assets/img/download_invoice.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <li style="color:red;" type="">Cancel shiprocket order.</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/cancel_order.png">
-                                        <!-- media -->
-                                        <img src="assets/img/cancel_order.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                                <li style="color:red;" type="">shiprocket order traking.</li>
-                                <div class="simplelightbox-gallery">
-                                    <a href="assets/img/order_tracking.png">
-                                        <!-- media -->
-                                        <img src="assets/img/order_tracking.png" class="image-doc" alt="">
-                                    </a>
-                                </div>
-                            </ol>
-                        </section>
-                    </header>
-                </article>
-                <section>
                     <h3 id="db2">Generate Client API Secret Key to be used in api requests from mobile apps.</h3>
                     <ul>
                         <li style="color:red;" type="">
@@ -906,7 +199,7 @@
                         </li>
                     </ul>
                     <ol>
-                        <li style="color:red;" type="">Goto http://vendor.eshopweb.store/admin/client-api-keys/</li>
+                        <li style="color:red;" type="">Goto http://eshop.in/admin/client-api-keys/</li>
                         <li style="color:red;" type="">You can generate secret as per image below.</li>
                         <li style="color:red;" type="">Set the secret on the app side as JWT Secret Key. </li>
                         <div class="promo">
@@ -927,9 +220,8 @@
                     </ul>
                     <ol type="A">
                         <li style="color:red;" type="">Goto <a href="https://console.firebase.google.com/"
-                                target="_blank"> >> Firebase console << </a>. </li>
-                        <li style="color:red;" type="">
-                            Register a new account or try to log in with existing google accout.</li>
+                                target="_blank"> >> Firebase console << </a>. </li> <li style="color:red;" type="">
+                                    Register a new account or try to log in with existing google accout.</li>
                         <div class="promo">
                             <img class="bordered" src="assets/img/consolepage.png" alt="sample Image">
                             <p>Sample image</p>
@@ -962,14 +254,11 @@
                             <img class="bordered" src="assets/img/authentication.png" alt="sample Image">
                             <p>Sample image</p>
                         </div>
-                        <li style="color:red;" type="">Now at the bottom of the page,</br> -> In "Authorized domains",
-                            localhost
-                            and a Firebase domain are automatically added.</br> -> Here we've to add domain name without
-                            http://
+                        <li style="color:red;" type="">Now at the bottom of the page,</br> -> In "Authorized domains", localhost
+                            and a Firebase domain are automatically added.</br> -> Here we've to add domain name without http://
                             and https:// whever eShop Front End(Web Version) Website will get hosted. If you're using
                             www as prefix of domain name then you must have to add that.</li>
-                        <li style="color:red;" type="">Now add your domain with <b> www. </b> as prefix like
-                            www.myeShop.com</li>
+                        <li style="color:red;" type="">Now add your domain with <b> www. </b> as prefix like www.myeShop.com</li>
                         <li style="color:red;" type="">Also add your domain without <b> www. </b> like myeShop.com</li>
                         <div class="promo">
                             <img class="bordered" src="assets/img/add_domain.png" alt="sample Image">
@@ -997,87 +286,6 @@
                     </ol>
                 </section>
                 <section>
-                    <h3 id="socila_login">Configure the firebase setup for social login web version</h3>
-                    <ul>
-                        <h3>
-                            <li style="color:red;" type="1"> Goto Admin panel System >> store settings and ON Socila login method you want.</li>
-                        </h3>
-                        <div class="promo">
-                            <img class="bordered" src="assets/img/admin_panel_social_login.png" alt="sample Image">
-                            <p>Sample image</p>
-                        </div>
-                        <h3>
-                            <li style="color:red;" type="1"> Goto Authentication and open " Sign-in method " Tab</li>
-                        </h3>
-                        <div class="promo">
-                            <img class="bordered" src="assets/img/firebase_sign_in_method.png" alt="sample Image">
-                            <p>Sample image</p>
-                        </div>
-                        <ol type="A">
-                            <li style="color:red;" type="">Enable Google and Facebook sign-in-method</li>
-                        </ol>
-                        <h3>
-                            <li style="color:red;" type="1"> Facebook Authentication </li>
-                        </h3>
-                        <ol type="A">
-                            <li style="color:red;" type="">For facebook authentication with firebase , go to >>
-                                <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers <<</a>
-                            </li>
-                            <div class="promo">
-                                <img class="bordered" src="assets/img/facebook_developer_login.png" alt="sample Image">
-                                <p>Sample image</p>
-                            </div>
-                            <li style="color:red;" type="">Now go to the My Apps option and create new app for your project</li>
-                            <div class="promo">
-                                <img class="bordered" src="assets/img/facebook_myapp.png" alt="sample Image">
-                                <p>Sample image</p>
-                            </div>
-                            <div class="promo">
-                                <img class="bordered" src="assets/img/facebook_create_app.png" alt="sample Image">
-                                <p>Sample image</p>
-                            </div>
-                            <div class="promo">
-                                <img class="bordered" src="assets/img/facebook_create_app2.png" alt="sample Image">
-                                <p>Sample image</p>
-                            </div>
-                            <div class="promo">
-                                <img class="bordered" src="assets/img/facebook_create_app3.png" alt="sample Image">
-                                <p>Sample image</p>
-                            </div>
-                            <div class="promo">
-                                <img class="bordered" src="assets/img/facebook_create_app4.png" alt="sample Image">
-                                <p>Sample image</p>
-                            </div>
-                            <li style="color:red;" type="">Now go to Quickstart option and select www(web) option</a>
-                            </li>
-                            <div class="promo">
-                                <img class="bordered" src="assets/img/facebook_create_app5.png" alt="sample Image">
-                                <p>Sample image</p>
-                            </div>
-                            <div class="promo">
-                                <img class="bordered" src="assets/img/facebook_create_app6.png" alt="sample Image">
-                                <p>Sample image</p>
-                            </div>
-                            <li style="color:red;" type="">Now go to Settings >> Basic and get your APP ID and APP SECRET , add this details in your firebase account facebook sign-in-method</a>
-                            </li>
-                            <div class="promo">
-                                <img class="bordered" src="assets/img/facebook_create_app7.png" alt="sample Image">
-                                <p>Sample image</p>
-                            </div>
-                            <div class="promo">
-                                <img class="bordered" src="assets/img/facebook_create_app9.png" alt="sample Image">
-                                <p>Sample image</p>
-                            </div>
-                            <li style="color:red;" type="">Now go to Facebook Login >> settings and configure your details there</a>
-                            </li>
-                            <div class="promo">
-                                <img class="bordered" src="assets/img/facebook_create_app10.png" alt="sample Image">
-                                <p>Sample image</p>
-                            </div>
-                        </ol>
-                    </ul>
-                </section>
-                <section>
                     <!-- start auto update -->
                     <h1 id="update">Auto Update</h1>
                     <h3>How to auto update your admin panel or web version to latest version?</h3>
@@ -1086,11 +294,10 @@
                     </div>
                     <ol>
                         <li>Find <b>update from vX.X to vX.X.X.zip</b> file from downloded PHP source code.</li>
-                        <li>Visit <code>http://vendor.eshopweb.store/admin/updater</code>
+                        <li>Visit <code>http://eshop.com/admin/updater</code>
                         </li>
                         <li>You will see simple instructions, current version to latest version information and
-                            <b>"Update The System"</b> button.
-                        </li>
+                            <b>"Update The System"</b> button. </li>
                         <li>Upload <b>update.zip</b> file.</li>
                         <li>Click on that Update Button. </li>
                         <li>That's all. You have successfully updated your system from older version to newer one.</li>
@@ -1105,9 +312,11 @@
                     Friday.
                     <br />
                     <h3>For Web or backend related issues contact here, </h3>
-                    <a href='https://join.skype.com/invite/ulxy3uPftGfT'>Drop a Message on Skype</a>
+                    <a href='skype:live:.cid.1a807eaff9133ee3'>Drop a Message on Skype</a> or Search this ID on Skype :
+                    .cid.1a807eaff9133ee3
                     <h3>And for mobile application related issues contact here, </h3>
-                    <a href='https://join.skype.com/invite/sNpxndh9SG4f'>Drop a Message on Skype</a>
+                    <a href='skype:live:harishvekariya100'>Drop a Message on Skype</a> or Search this ID on Skype :
+                    harishvekariya100
                 </section>
                 <section>
                     <h2 id="tabs">Website Overview</h2>
@@ -1116,7 +325,7 @@
                         <p>Sample image</p>
                     </div>
                     <p style="color:red;">The Above web page contains tabs on the left panel like
-                        Home,Orders,Categories,Product, Home Slider img,New Offers img,Promo code,Featured
+                        Home,Orders,Categories,Product, Home Slider Images,New Offers Images,Promo code,Featured
                         Sections,Customer,Return Requests,Delivery Boys,Send Notification,System,Location,Reports
                         and FAQs to manage the whole website</p>
 
@@ -1269,19 +478,6 @@
                             </li>
                         </ul>
                     </ul>
-                    <p style="color:red;">Assign Categories To Seller</p>
-                    <div class="promo">
-                        <img class="bordered" src="assets/img/category-assign1.png" alt="sample3">
-                    </div>
-                    <div class="promo">
-                        <img class="bordered" src="assets/img/category-assign2.png" alt="sample3">
-                    </div>
-                    <div class="promo">
-                        <img class="bordered" src="assets/img/category-assign3.png" alt="sample3">
-                    </div>
-                    <div class="promo">
-                        <img class="bordered" src="assets/img/category-assign4.png" alt="sample3">
-                    </div>
                     <br />
                     <h3 id="seller_wallet_transactions">Wallet Transactions</h3>
                     <h4>Displaying Seller's Wallet Transactions List</h4>
@@ -1822,13 +1018,13 @@
                     <br>
                     <h3 id="media_gallery">Media Management</h3>
                     <div class="promo">
-                        <img class="bordered" src="assets/img/uipload-img.png" alt="sample3">
+                        <img class="bordered" src="assets/img/uipload-images.png" alt="sample3">
                     </div>
-                    <p style="color:red;">Here all types of img/documents can be uploaded.</p>
+                    <p style="color:red;">Here all types of images/documents can be uploaded.</p>
                     <div class="promo">
                         <img class="bordered" src="assets/img/media_table.PNG" alt="sample3">
                     </div>
-                    <p style="color:red;">Here all types of img/documents can be viewed.</p>
+                    <p style="color:red;">Here all types of images/documents can be viewed.</p>
                     <li style="color:grey;">
                         <img class="bordered" src="assets/img/delete1_tab.jpg" alt="sample3" width="30"> Used to Delete
                         the image.
@@ -1854,11 +1050,11 @@
                     </div>
                     <li style="color:blue;">That's all. You have successfully added image in the form.</li>
                     <br>
-                    <h3 id="home_slider">Home Slider img</h3>
+                    <h3 id="home_slider">Home Slider Images</h3>
                     <div class="promo">
                         <img class="bordered" src="assets/img/home_slider_tab.jpg" alt="sample3">
                     </div>
-                    <p style="color:red;">Here all the information related to Home Slider img is display</p>
+                    <p style="color:red;">Here all the information related to Home Slider Images is display</p>
                     Actions
                     <ul>
                         <li>Search slider image details</li>
@@ -1910,14 +1106,14 @@
                         <img class="bordered" src="assets/img/home_slider3_tab.jpg" alt="sample3">
                     </div>
                     <ol>
-                        <li style="color:red;" type="">In Type field Enter the Type of the Slider img list.</li>
+                        <li style="color:red;" type="">In Type field Enter the Type of the Slider Images list.</li>
                         <li style="color:red;" type="">To know how to upload image in the form click <a
                                 href='#add-image-form'>here</a>.</li>
                         <li style="color:red;" type="">Click add Slider to add Slider or Reset to Reset the form.</li>
                     </ol>
                     <h2>Step 2:Delete Slider from the List</h2>
-                    <p> For Deleting Slider img we need to use<img src="assets/img/delete1_tab.jpg"> as explained
-                        above under Actions Slider img.</p>
+                    <p> For Deleting Slider Images we need to use<img src="assets/img/delete1_tab.jpg"> as explained
+                        above under Actions Slider Images.</p>
 
                     <br>
 
@@ -1925,7 +1121,7 @@
                     <div class="promo">
                         <img class="bordered" src="assets/img/offers_tab.jpg" alt="sample3">
                     </div>
-                    <p style="color:red;">Here all the information related to New Offers img is display</p>
+                    <p style="color:red;">Here all the information related to New Offers Images is display</p>
                     Actions
                     <ul>
                         <li>Search slider image details</li>
@@ -1958,7 +1154,7 @@
                         </ul>
                     </ul>
                     <br>
-                    <p style="color:red;">We Can add New Offer img and delete Offer by following Steps :</p>
+                    <p style="color:red;">We Can add New Offer Images and delete Offer by following Steps :</p>
                     <h2>Step 1:Adding New Offers in the Offers Management</h2>
                     <p style="color:green;">Click on Add Offer Tab Present On The Right Side</p>
                     <div class="promo">
@@ -1974,8 +1170,8 @@
                                 href='#add-image-form'>here</a>.</li>
                         <li style="color:red;" type="">Click add Offer to add Offer or Reset to Reset the form.</li>
                     </ol>
-                    <h2>Step 2:Delete Offer img from the List</h2>
-                    <p> For Deleting Offer img we need to use<img src="assets/img/delete1_tab.jpg"> as explained
+                    <h2>Step 2:Delete Offer Images from the List</h2>
+                    <p> For Deleting Offer Images we need to use<img src="assets/img/delete1_tab.jpg"> as explained
                         above under Actions Offer.</p>
 
                     <br>
@@ -2045,7 +1241,7 @@
                     <ol>
                         <li style="color:red;" type="">To know how to upload image in the form click <a
                                 href='#add-image-form'>here</a>.</li>
-                        <li style="color:red;" type="">Click add Offer to Upload img or Reset to Reset the form.</li>
+                        <li style="color:red;" type="">Click add Offer to Upload Images or Reset to Reset the form.</li>
                     </ol>
                     <h2>Step 2:Delete Promo Code from the List</h2>
                     <p> For Deleting Promo Code we need to use<img src="assets/img/delete1_tab.jpg"> as explained above
@@ -2528,6 +1724,33 @@
                     </ul>
 
                     <br>
+
+                    <h3 id="email_settings">Email Setting</h3>
+                    <li style="color:green;" type="circle">The System Tab contains an Sub tab name as Email Settings
+                    </li>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/email_settings.png" alt="sample3">
+                    </div>
+                    <ul>
+                        <li type="circle" style="color:red;">From Here The Email Settings can be Updated as per
+                            requirements</li>
+                        <ul>
+                            <li><span style="color:blue;">From eMail ID</span> : <img src="assets/img/from_email.jpg"
+                                    width="200px"> All Emails in the system will be sent from this email id </li>
+                            <li><span style="color:blue;">Password</span> : From Here we can update the Password</li>
+                            <li><span style="color:blue;">SMTP Host</span> : From Here we can update the SMTP Host</li>
+                            <li><span style="color:blue;">SMTP Port</span> : From Here we can update the SMTP Port</li>
+                            <li><span style="color:blue;">Email Content Type</span> : From Here we can update the Email
+                                Content Type</li>
+                            <li><span style="color:blue;">SMTP Encryption</span> : From Here we can update the SMTP
+                                Encryption</li>
+                            <li style="color:blue;" type="">Click Update Email Settings to the Update Email Settings or
+                                Reset to Reset the form.</li>
+                        </ul>
+                    </ul>
+
+                    <br>
+
                     <h3 id="payment_methods">Payment Methods</h3>
                     <li style="color:green;" type="circle">The System Tab contains an Sub tab name as Payment Methods
                     </li>
@@ -2667,16 +1890,28 @@
                     <br>
 
                     <h3 id="notification_settings">Notification Settings</h3>
-                    <li style="color:green;" type="circle">The System Tab contains an Sub tab name as Notification
-                        Settings </li>
+                    <li style="color:green;" type="circle">The System Tab contains an Sub tab name as Notification Settings </li>
                     <div class="promo">
-                        <img class="bordered" src="assets/img/notification_setting.jpg" alt="sample3">
+                        <img class="bordered" src="assets/img/admin_notification.png" alt="sample3">
                     </div>
+                    <li><span style="color:blue;">Vap id</span> : Firebase &rarr; Project Settings &rarr; Cloud Messaging &rarr; Web Configuration  &rarr; here you have to generate it </li>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/notf_vap_id.png" alt="sample3">
+                    </div>
+                    <li><span style="color:blue;">Firebase Project ID</span> : Firebase &rarr; Project Settings &rarr; General &rarr; Project ID</li>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/notf_project_id.png" alt="sample3">
+                    </div>
+                    <li><span style="color:blue;">Service Account File</span> : Firebase &rarr; Project Settings &rarr; Service Account &rarr; Generate new private key &rarr; Here you will get a JSON file which you need to upload in the admin panel</li>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/notif_json.png" alt="sample3">
+                    </div>
+                    
                     <ul>
-                        <li><span style="color:blue;">FCM Server Key</span> : From Here we can update the FCM Server Key
-                        </li>
-                        <li type="circle" style="color:red">Click Button To Update Notification Settings or Reset to
-                            Reset the form.</li>
+                        <li><span style="color:blue;">Vap id</span> : Firebase &rarr; Project Settings &rarr; Cloud Messaging &rarr; Web Configuration  &rarr; here you have to generate it </li>
+                        <li><span style="color:blue;">Firebase Project ID</span> : Firebase &rarr; Project Settings &rarr; General &rarr; Project ID</li>
+                        <li><span style="color:blue;">Service Account File</span> : Firebase &rarr; Project Settings &rarr; Service Account &rarr; Generate new private key &rarr; Here you will get a JSON file which you need to upload in the admin panel</li>
+                        <li style="color:red">Click the button to update notification settings or reset to reset the form.</li>
                     </ul>
 
                     <br>
