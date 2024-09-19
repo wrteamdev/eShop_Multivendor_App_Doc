@@ -77,6 +77,8 @@
                             <a href="#orders">Orders</a>
                             <ul>
                                 <li><a href="#order_tracking">Order Tracking</a></li>
+                                <li><a href="#shipping_order_flow">Shipping Order Flow </a>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -446,7 +448,7 @@
                         nav flat style,Sidebar nav child indent,Navbar Variants,Dark
                         Sidebar Variants,Dark Sidebar Variants to manage the whole website</p>
                     <div class="promo">
-                        <img class="bordered" src="assets/img/header-users.jpg" alt="sample3">
+                        <img class="bordered" src="assets/img/header-users.png" alt="sample3">
                         <p>Sample image</p>
                     </div>
                     <p>It Mainly contains 2 Items</p>
@@ -534,10 +536,96 @@
                         </ul>
                     </ul>
                     <br />
+
                     <h3 id="order_tracking">Order Tracking</h3>
                     <h4>Displaying order tracking List</h4>
                     <div class="promo">
                         <img class="bordered" src="assets/img/order_tracking.jpg" alt="sample3">
+                    </div>
+                    <br />
+
+                    <h3 id="shipping_order_flow">Shipping Order Flow Update for Existing Clients</h3>
+                    <div class="important-note">
+                        <strong>Note:</strong> Only sellers can ship orders now—admins won’t be able to ship orders yet,
+                        but this feature will be available in future updates.
+                    </div>
+
+                    <h5>1. Seller Panel Overview</h5>
+                    <ul>
+                        <li>In the Seller Panel, you’ll notice two tabs: <strong>Order Items</strong> and
+                            <strong>Shipments</strong>.
+                        </li>
+                        <li>In the <strong>Order Items</strong> tab, you’ll see all the items for your orders.</li>
+                        <li>In the <strong>Shipments</strong> tab, you’ll find a "Create a Parcel" button and
+                            <strong>Created Parcels List</strong>.
+                        </li>
+                    </ul>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/seller_overview1.png" alt="sample3">
+                    </div>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/seller_overview2.png" alt="sample3">
+                    </div>
+
+                    <h5>2. Creating a Parcel</h5>
+                    <p>To ship an order, click on the "Create a Parcel" button. You’ll be able to select the items you
+                        want to ship and then create the parcel.</p>
+                        <div class="promo">
+                            <img class="bordered" src="assets/img/create_parcel1.png" alt="sample3">
+                        </div>
+                    <h5>3. Managing Parcels</h5>
+                    <p>Once a parcel is created, it will appear in a list with four action buttons:</p>
+                    <ul>
+                        <li><strong>View:</strong> See the items inside the parcel.</li>
+                        <li><strong>Invoice:</strong> View or download the invoice for the parcel.</li>
+                        <li><strong>Update Status:</strong> Open a window to update the shipping status.</li>
+                        <li><strong>Delete:</strong> You can delete a parcel, but only if it hasn't been shipped yet.
+                        </li>
+                    </ul>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/manage_parcel1.png" alt="sample3">
+                    </div>
+
+                    <h5>4. Updating Shipping Status</h5>
+                    <p>When you click <strong>Update Status</strong>, a window will open with two options:</p>
+                    <ul>
+                        <li><strong>Local Shipping:</strong> Select the delivery person and update the status.</li>
+                        <li><strong>Shiprocket Orders:</strong> First, create a Shiprocket parcel with the required
+                            details. Once created, Shiprocket parcel details will appear in the status update tab. Below
+                            this, you’ll see two buttons:
+                            <ul>
+                                <li><strong>Cancel Shiprocket Parcel:</strong> Lets you cancel the Shiprocket parcel if
+                                    needed.</li>
+                                <li><strong>Refresh:</strong> Refresh the status if it doesn't update automatically.
+                                </li>
+                            </ul>
+                            <p>Note: The status will usually update on its own, but clicking "Refresh" will manually
+                                update it to reflect the current parcel status.</p>
+                        </li>
+                    </ul>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/shipping_status1.png" alt="sample3">
+                    </div>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/shipping_status2.png" alt="sample3">
+                    </div>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/shipping_status3.png" alt="sample3">
+                    </div>
+
+                    <h5>5. Return Process</h5>
+                    <p>The return process remains the same as before:</p>
+                    <ul>
+                        <li>Currently, the method for managing return parcels is manual.</li>
+                        <li>When a customer requests a return, the admin will receive the request, accept it, and mark
+                            the item as returned once the parcel is received.</li>
+                        <li><strong>Note:</strong> Sellers cannot update the status for returns.</li>
+                    </ul>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/return_request1.png" alt="sample3">
+                    </div>
+                    <div class="promo">
+                        <img class="bordered" src="assets/img/return_request2.png" alt="sample3">
                     </div>
                     <br />
 
@@ -2215,11 +2303,13 @@
                     <div class="promo">
                         <img class="bordered" src="assets/img/sms_gateway_settings_1.png" alt="sample3">
                     </div>
-                    <li><span style="color:blue;">SMS Gateway Configuration</span> : From here you can set your custom gateway setting </li>
+                    <li><span style="color:blue;">SMS Gateway Configuration</span> : From here you can set your custom
+                        gateway setting </li>
                     <div class="promo">
                         <img class="bordered" src="assets/img/sms_gateway_settings_2.png" alt="sample3">
                     </div>
-                    <li><span style="color:blue;">SMS Matrix</span> : From here you can set notification send setting (like you don't want to send notification via sms , then turn off it  )</li>
+                    <li><span style="color:blue;">SMS Matrix</span> : From here you can set notification send setting
+                        (like you don't want to send notification via sms , then turn off it )</li>
                     <div class="promo">
                         <img class="bordered" src="assets/img/sms_gateway_settings_3.png" alt="sample3">
                     </div>
