@@ -64,6 +64,10 @@
                     <li><a href="#title">Setup</a></li>
                     <ul>
                         <li><a href="#installation">Installation</a></li>
+                        <li><a href="#manual_installation">Manual Installation</a></li>
+                        <li><a href="#web_installation">Web Installation</a></li>
+                        <li><a href="#common_issues">Common Issues</a></li>
+                        <li><a href="#shipping_methods">Shipping Methods</a></li>
                         <li><a href="#db2"> Client Api Keys Configration </a></li>
                         <li><a href="#firebase_config"> Web Version Firebase Configration </a></li>
                         <li><a href="#social_login"> Social Login Configration </a></li>
@@ -189,6 +193,534 @@
                     <p> Now click <span style="color:blue;">Install</span>. Thats it! You are ready to run your first
                         ecommerce App : <b>https://eshop.com/</b></p>
                 </section>
+
+                <h3 id="manual_installation"> How install the eshop backend and / or web version code on
+                    your
+                    server manually?</h3>
+                <section class="docs-intro" id="item-6-1">
+                    <p>
+                    <ol>
+                        <li>Open application\config\config.php file from your server</li>
+                        <li>Set Your Domain url in base_url ex.$config['base_url'] = 'http://your_domain_url/';</li>
+                        <div class="simplelightbox-gallery">
+                            <a href="assets/img/config.png">
+                                <!-- media -->
+                                <img src="assets/img/config.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <li>step 2 : Open application\config\database.php file from your server</li>
+                        <li>Set your Database username , database password and database name there</li>
+                        <li>Import blank databse into your phpmyadmin(you will find blank databse in your code ex.eShop
+                            Multi Vendor - blank database - vx.x.x</li>
+                        <div class="simplelightbox-gallery">
+                            <a href="assets/img/database-setting.png">
+                                <!-- media -->
+                                <img src="assets/img/database-setting.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+                        <li>step 3 : Open code in your server and delete install folder.</li>
+                        <li>Now your system is ready to use.</li>
+                        <li>You can login using our default mobile : <b>9876543210</b> and password : <b>12345678</b>
+                        </li>
+                    </ol>
+                </section>
+
+                <h3 id="web_installation"> How install the eshop web if you already have installed admin panel</h3>
+                <section class="docs-intro" id="item-6-1">
+                    <p>
+                    <ol>
+                        <li>Find <b>web version - vx.x.x - installer - updater</b> file from downloded PHP source code.
+                        </li>
+                        <a href="assets/img/web-1.png">
+                            <!-- media -->
+                            <img src="assets/img/web-1.png" class="image-doc " alt="">
+                        </a>
+                        <a href="assets/img/web-2.png">
+                            <!-- media -->
+                            <img src="assets/img/web-2.png" class="image-doc " alt="">
+                        </a>
+
+                        <li>You can find file from above mentioed folder
+                        </li>
+                        <li>Visit <code>http://vendor.eshopweb.store/admin/updater</code>
+                        </li>
+                        <li>Just drag and drop above mentioned file in to updater and click on
+                            <b>"Update The System"</b> button.
+                        </li>
+                        <li>Upload <b>update.zip</b> file.</li>
+                        <li>Click on that Update Button. </li>
+                        <li>That's all. You have successfully installed web version into your current system.</li>
+                    </ol>
+                </section>
+
+                <article class="docs-article" id="section-10">
+                    <header class="docs-header">
+                        <h1 class="h1" id="common_issues">Common issues (Server Specific)</h1>
+                        <section class="docs-intro" id="item-6-1">
+                            <h2 class="h2">404 Code Found?</h2>
+                            <p>
+                            <ol>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/404-error.png">
+                                        <!-- media -->
+                                        <img src="assets/img/404-error.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li>Your <strong> .htaccess </strong> file is missing at your server. </li>
+                                <li>To resolve that open zip file which you have downloaded from codecanyon.</li>
+                                <li>Unzip this file Code <strong> vX.X - upload this to server </strong> </li>
+                                <li>Open that folder and you will get <strong>.htaccess</strong> file</li>
+                                <li>Upload that file on main folder.</li>
+                            </ol>
+                            </p>
+                        </section>
+                        <section class="docs-intro" id="item-6-2">
+                            <h2 class="h2">Not Settling Payments to sellers while deliver the order?</h2>
+                            <p>
+                            <ol>
+                                <li>Check that you have set the <strong> Cron job </strong> on your server.</li>
+                                <li>Note: if you are not aware of cron job then you can ask your server for
+                                    help or documentation.</li>
+                                <li>For more details of commission method you will find guidance on bottom
+                                    of System -> System Settings page. </li>
+                                <li>This cron job is automatic system for payment Settling. If you want to do it
+                                    manually then we have that option too.</li>
+                                <li>Go to sellers -> sellerss Manu</li>
+                                <li>Click on <strong>Update Seller Comission</strong> Button for settlement of
+                                    sellers payments.See below image :</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/manual-settle.png">
+                                        <img src="assets/img/manual-settle.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                            </ol>
+                            </p>
+                        </section>
+                        <section class="docs-intro" id="item-6-2">
+                            <h2 class="h2">Assign categories to seller</h2>
+                            <video width="500" height="300" controls="">
+                                <source src="assets/videos/assign_category.webm" type="video/mp4">
+                            </video>
+                        </section>
+                        <section class="docs-intro" id="item-6-3">
+                            <h2 class="h2">Added product but not showing?</h2>
+                            <p>
+                            <ol>
+                                <li>Check that if seller has added then admin need to activate that product.</li>
+                                <li>Check your <strong> only_full_group_by_mode </strong> at your server. it has to
+                                    be disable.</li>
+                                <li>If you are having this <strong>only_full_group_by_mode</strong> issue then this
+                                    is your server side issue. please ask your server support to disable this
+                                    only_full_group_by_mode at PHPMyAdmin(mySQL).</li>
+                                <li>Check product is active or de-active. It ahs to be active for display.</li>
+                            </ol>
+                            </p>
+                        </section>
+                        <section class="docs-intro" id="item-6-4">
+                            <h2 class="h2">Not installing?</h2>
+                            <p>
+                            <ol>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/installer-1.png">
+                                        <!-- media -->
+                                        <img src="assets/img/installer-1.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li>Set all the fields do not set blank in any field.</li>
+                                <li>Use this same mobile, password and email for the installation. You can change
+                                    password from profile section.</li>
+                                <li>And if you want to change mobile then you need to run the query on your
+                                    MySQL(PhpMyAdmin).</li>
+                                <li>Steps to run this query:</li>
+                                <ol>
+                                    <li>Open PhpMyAdmin on your server. select your databse and table.</li>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/img/users-list.png">
+                                            <!-- media -->
+                                            <img src="assets/img/users-list.png" class="image-doc" alt="">
+                                        </a>
+                                    </div>
+                                    <li>Open Users table.</li>
+                                    <li>Click on SQL tab</li>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/img/sql-tab.png">
+                                            <!-- media -->
+                                            <img src="assets/img/sql-tab.png" class="image-doc" alt="">
+                                        </a>
+                                    </div>
+                                    <li>Copy this following query and paste in that sql tab page
+                                        <code>UPDATE `users` SET `mobile` = 'YOUR_MOBILE_NUMBER' WHERE `users`.`id`
+                                                = 1;</code>
+                                    </li>
+                                    <li>And Click on <strong> GO </strong> Button to run that query. See the image
+                                        below:</li>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/img/run-query.png">
+                                            <!-- media -->
+                                            <img src="assets/img/run-query.png" class="image-doc" alt="">
+                                        </a>
+                                    </div>
+                                </ol>
+                            </ol>
+                            </p>
+                        </section>
+                        <section class="docs-intro" id="item-6-5">
+                            <h2 class="h2">SMTP Email notification not working?</h2>
+                            <p>
+                            <ol>
+                                <li>You have to setup the email settings on panel.You can see below image.</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/email-settings.png">
+                                        <!-- media -->
+                                        <img src="assets/img/email-settings.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li>You can test your SMTP configuration here <a href="https://www.gmass.co/smtp-test"
+                                        target="_BLANK"><i class="fa fa-link"></i></a></li>
+                            </ol>
+                            </p>
+                        </section>
+                        <section class="docs-intro" id="item-6-6">
+                            <h2 class="h2">Push notification not working?</h2>
+                            <p>
+                            <ol>
+                                <li>Setup FCM Server Key</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/notification-settings.png">
+                                        <!-- media -->
+                                        <img src="assets/img/notification-settings.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li>If still its not working then logout the app, then login the app and check the
+                                    notification.</li>
+                            </ol>
+                            </p>
+                        </section>
+                        <section class="docs-intro" id="item-6-7">
+                            <h2 class="h2">Invalid Hash Error?</h2>
+                            <p>
+                            <ol>
+                                <li>Check that you have created the Client Api Keys for your application. Here,</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/clients-api-keys.png">
+                                        <!-- media -->
+                                        <img src="assets/img/clients-api-keys.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li>Set that secret key at application side.</li>
+                                <li>It should be same on both side application and Admin panel side.</li>
+                            </ol>
+                            </p>
+                        </section>
+                    </header>
+                </article>
+                <article class="docs-article" id="section-11">
+                    <header class="docs-header">
+                        <h1 class="h1" id="shipping_methods">Shipping Methods</h1>
+                        <ul>
+                            <li style="color:red;" type="">
+                                In Shipping you can select shippings method for deliver orders to customers.
+                            </li>
+                            <li style="color:red;" type="">
+                                currently 2 shipping methods are available in Eshop. if you want you can use both
+                                shipping method at a time.
+                            </li>
+                        </ul>
+                        <h6><b>Type :</b></h6>
+                        <ol>
+                            <li>
+                                Local Shipping
+                            </li>
+                            <li>
+                                Standard Shipping
+                                <ol>
+                                    <li>
+                                        Shiprocket
+                                    </li>
+                                </ol>
+                            </li>
+                            </ul>
+                        </ol>
+                        <h6><b>How to change shipping Methods:</b></h6>
+                        <p>
+
+                        <div class="simplelightbox-gallery">
+                            <a href="assets/img/shipping_method.png">
+                                <!-- media -->
+                                <img src="assets/img/shipping_method.png" class="image-doc" alt="">
+                            </a>
+                        </div>
+
+                        </p>
+                        <section class="docs-intro" id="item-6-7">
+                            <h2 class="h2">Local Shipping Method</h2>
+                            <p>
+                            <ul>
+                                <li>In this method you can assign your delivery boy for deliver customer orders.</li>
+                            </ul>
+                            </p>
+                        </section>
+                        <section class="docs-intro" id="item-6-7">
+                            <h2 class="h2">Standard Shipping</h2>
+                            <p>
+                            <ul>
+                                <li>in this method you can use other currier services like shiprocket for deliver orders
+                                    to customers.</li>
+                            </ul>
+                            <ol>
+                                <h5>
+                                    <li>Shipprocket</li>
+                                </h5>
+                            </ol>
+                            <ul>
+                                Shiprocket, a product of Delhi based BigFoot Retail solution, is India's first automated
+                                shipping software that aims reduce ecommerce shipping to its bare bones. ... You can
+                                print bulk shipping labels and ship your products to in and around the world using a
+                                single platform.
+                            </ul>
+                            </p>
+                        </section>
+                        <section class="docs-intro" id="item-6-7">
+                            <h2 class="h2">Account</h2>
+                            <p>
+                            <ul>
+                                <li>First Create shiprockdet account<a href="https://app.shiprocket.in/register"
+                                        target="_blank"> Click here.</a></li>
+                            </ul>
+                            </p>
+                            <p></p>
+                            <div class="simplelightbox-gallery">
+                                <a href="assets/img/shiprocket_account.png">
+                                    <!-- media -->
+                                    <img src="assets/img/shiprocket_account.png" class="image-doc" alt="">
+                                </a>
+                            </div>
+                            </p>
+                        </section>
+                        <section class="docs-intro" id="item-6-7">
+                            <h2 class="h2">Recharge Wallet</h2>
+                            <p>
+                            <ul>
+                                <li>after successfully login you have to recharge you shiprocket wallet without wallet
+                                    balance you can not use their services</li>
+                            </ul>
+                            </p>
+                            <p></p>
+                            <div class="simplelightbox-gallery">
+                                <a href="assets/img/shiprocket_wallet.png">
+                                    <!-- media -->
+                                    <img src="assets/img/shiprocket_wallet.png" class="image-doc" alt="">
+                                </a>
+                            </div>
+                            </p>
+                        </section>
+                        <section class="docs-intro" id="item-6-7">
+                            <h2 class="h2">API Config</h2>
+                            <p>
+                            <ul>
+                                <li>So now to use shiprocket in your system first go to api Config from <a
+                                        href="https://app.shiprocket.in/api-user" target="bla
+                                    ">here</a></li>
+                            </ul>
+                            </p>
+                            <p>
+                            <div class="simplelightbox-gallery">
+                                <a href="assets/img/shiprocketApi_config.png">
+                                    <!-- media -->
+                                    <img src="assets/img/shiprocketApi_config.png" class="image-doc" alt="">
+                                </a>
+                            </div>
+                            </p>
+                            <p>
+                            <div class="simplelightbox-gallery">
+                                <a href="assets/img/create_shiprocketApi.png">
+                                    <!-- media -->
+                                    <img src="assets/img/create_shiprocketApi.png" class="image-doc" alt="">
+                                </a>
+                            </div>
+                            </p>
+                            <p>
+                            <ul>
+                                <li>here you have to create user for use shiprockdet in your system.</li>
+                            </ul>
+                            </p>
+                            <p>
+                            <div class="simplelightbox-gallery">
+                                <a href="assets/img/create_shiprocketApi2.png">
+                                    <!-- media -->
+                                    <img src="assets/img/create_shiprocketApi2.png" class="image-doc" alt="">
+                                </a>
+                            </div>
+                            </p>
+                            <p>
+                            <ul>
+                                <li>
+                                    <h5>After create user you have to add user credentials in you admin panel here.</h5>
+                                </li>
+                            </ul>
+                            </p>
+                            <p>
+                            <div class="simplelightbox-gallery">
+                                <a href="assets/img/shipping_methods.png">
+                                    <!-- media -->
+                                    <img src="assets/img/shipping_methods.png" class="image-doc" alt="">
+                                </a>
+                            </div>
+                            </p>
+                        </section>
+                        <section class="docs-intro" id="item-6-7">
+                            <h2 class="h2">How it will work?</h2>
+                            <p><br>
+                            <h4>1. Add Pickup Location.</h4>
+                            <ul>
+                                <li>shiprocket uses pickup location for pickup orders from owner</li>
+                                <li>in your system only seller can add pickup location, from here seller can add
+                                    pickup
+                                    location.</li>
+                            </ul>
+                            </p>
+                            <p>
+                            <div class="simplelightbox-gallery">
+                                <a href="assets/img/seller_pickup_location.png">
+                                    <!-- media -->
+                                    <img src="assets/img/seller_pickup_location.png" class="image-doc" alt="">
+                                </a>
+                            </div>
+                            </p><br>
+                            <p>
+                            <h5>after adding pickup location admin have to verified pickup location from admin panel
+                                and
+                                also from shiprocket dashboard</h5>
+                            </p>
+                            <ol>
+                                <p>
+                                    <li>verify pickup location from admin panel</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/admin_pickup_location.png">
+                                        <!-- media -->
+                                        <img src="assets/img/admin_pickup_location.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li>verify pickup location from shiprocket dashboard</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/shiprocket_pickup_location.png">
+                                        <!-- media -->
+                                        <img src="assets/img/shiprocket_pickup_location.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/shiprocket_verify_pickup_location.png">
+                                        <!-- media -->
+                                        <img src="assets/img/shiprocket_verify_pickup_location.png" class="image-doc"
+                                            alt="">
+                                    </a>
+                                </div>
+                                </p>
+                            </ol>
+                            <br>
+                            <h4>2. Add product or Edit product.</h4>
+                            <p>
+                            <ul>
+                                <li>after successfully verify pickup location you can add/edit product like this</li>
+                                <ol>
+                                    <li style="color:red;" type="">For simple product </li>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/img/add_simple_product.png">
+                                            <!-- media -->
+                                            <img src="assets/img/add_simple_product.png" class="image-doc" alt="">
+                                        </a>
+                                    </div>
+                                    <li style="color:red;" type="">For variable product </li>
+                                    <div class="simplelightbox-gallery">
+                                        <a href="assets/img/add_variable_product.png">
+                                            <!-- media -->
+                                            <img src="assets/img/add_variable_product.png" class="image-doc" alt="">
+                                        </a>
+                                    </div>
+                                </ol>
+                            </ul>
+                            </p>
+                        </section>
+                        <section class="docs-intro" id="item-6-7">
+                            <h2 class="h2">How to create shiprocket order?</h2>
+                            <p>
+                            <ul>
+                                <li>after getting orders and want deliver order using shiprocket you have to create
+                                    shiprocket order
+                                    Go to edit order in you panel </li>
+                            </ul>
+                            </p>
+                            <ol>
+                                <li style="color:red;" type="">Select Pickup Location for which you want to create
+                                    parcel and click on Create
+                                    Shiprocket Order button.</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/create_order.png">
+                                        <!-- media -->
+                                        <img src="assets/img/create_order.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li style="color:red;" type="">After create order generate AWB code(its unique number
+                                    use for identify order) like
+                                    this.</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/generate_awb.png">
+                                        <!-- media -->
+                                        <img src="assets/img/generate_awb.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li style="color:red;" type="">After generate AWB Send pickup request for scheduled you
+                                    shipping.</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/send_pickup_request.png">
+                                        <!-- media -->
+                                        <img src="assets/img/send_pickup_request.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li style="color:red;" type="">Generate and download Label.</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/generate_label.png">
+                                        <!-- media -->
+                                        <img src="assets/img/generate_label.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/download_label.png">
+                                        <!-- media -->
+                                        <img src="assets/img/download_label.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li style="color:red;" type="">Generate and download Invoice.</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/generate_invoice.png">
+                                        <!-- media -->
+                                        <img src="assets/img/generate_invoice.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/download_invoice.png">
+                                        <!-- media -->
+                                        <img src="assets/img/download_invoice.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li style="color:red;" type="">Cancel shiprocket order.</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/cancel_order.png">
+                                        <!-- media -->
+                                        <img src="assets/img/cancel_order.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                                <li style="color:red;" type="">shiprocket order traking.</li>
+                                <div class="simplelightbox-gallery">
+                                    <a href="assets/img/order_tracking.png">
+                                        <!-- media -->
+                                        <img src="assets/img/order_tracking.png" class="image-doc" alt="">
+                                    </a>
+                                </div>
+                            </ol>
+                        </section>
+                    </header>
+                </article>
 
                 <section>
 
