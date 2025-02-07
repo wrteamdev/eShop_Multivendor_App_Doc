@@ -25,6 +25,7 @@
             </header>
             <nav id="nav">
                 <ul>
+                    <li><a href="#requiredSoftware" style="color:#ff0039">Required Software</a></li>
                     <li><a href="#setupJDK" style="color:#ff0039">How to Setup Java jdk-11 on
                             windows</a></li>
                     <li><a href="#setup" style="color:#ff0039">How to setup Flutter</a></li>
@@ -64,11 +65,13 @@
                             Authentication(OTP).</a></li>
                     <li><a href='#otp' style="color:#ff0039">How to Change default country code for
                             OTP.</a></li>
+                    <li><a href='#firebaseBlazeBilling' style="color:#ff0039">How to Enable Firebase Blaze billing</a>
                     <li><a href='#googleSignIn' style="color:#ff0039">Authenticate with Firebase Using
                             Google Sign-In</a></li>
                     <li><a href='#appleSignIn' style="color:#ff0039">Authenticate with Firebase Using
                             Apple Login</a></li>
                     <li><a href='#fcm' style="color:#ff0039">How to set Notification</a></li>
+                    </li>
                     <li><a href='#link' style="color:#ff0039">How to Manage Native Link form Share
                             product</a></li>
                     <!-- <li><a href='#link' style="color:#ff0039">How to Create Dynamic Link Using Firebase
@@ -135,9 +138,26 @@
                             </div>
                         </div>
 
+                        <section id="requiredSoftware">
+                            <div class="container"><br>
+                                <h3>Required Softwares</h3>
+
+                                <ol>
+                                    <li>Android Studio Koala | 2024.1.1 <br>
+                                    </li>
+                                    <li>Flutter 3.24.3
+                                    </li>
+                                    <li>Java Version 19.0.2
+                                    </li>
+                                </ol>
+                                <div class="section_bdr"></div>
+                                </ul>
+                            </div>
+                        </section>
 
                         <section id="setupJDK">
                             <div class="container"><br>
+
                                 <h2>How to Setup latest Java jdk on windows</h2>
                                 <ol>
                                     <li> If your System already have latest Java jdk installed then you
@@ -1031,7 +1051,7 @@
                                 <h2>How to Change server url</h2>
                                 <ol>
                                     <li>go to your admin panel in that go to system and inside that
-                                        client api key, here
+                                        client api keys, here
                                         you have to copy API link as shown in below fig and paste it in
                                         app baseURL.
                                     </li>
@@ -1299,6 +1319,29 @@
                                     <br>
                                     <img src="images/otp.png"><br><br>
 
+                                </ol>
+                            </div>
+                        </section>
+
+                        <section id="firebaseBlazeBilling">
+                            <div class="container">
+                                <h2 style=" display: inline;">How to Enable Firebase Blaze billing</h2>
+                                <ol>
+                                    <br>
+                                    <ul>
+                                        <li>
+                                            Firebase Phone Authentication OTP not being sent in Android because of
+                                            BILLING_NOT_ENABLED, it’s because Firebase has changed the criteria since
+                                            1st September. Sadly it now requires Blaze (paid) plan to make use of Phone
+                                            Authentication SMS OTPs now. The daily 10 free SMS are still there, but only
+                                            in Blaze plan.
+                                        </li>
+                                        <br>
+                                        <iframe width="700" height="400" src="https://www.youtube.com/embed/RuJuBCYjmhc"
+                                            title="How to enable firebase blaze plan" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </ul>
                                 </ol>
                             </div>
                         </section>
